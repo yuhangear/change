@@ -1,0 +1,111 @@
+hotword
+I1116 18:31:33.383083 3231556 params.h:182] Reading torch model ./model/release_malay-eng-model_500imda_200King_31mix_splice100/final.zip
+I1116 18:31:33.384059 3231556 torch_asr_model.cc:36] Num intra-op threads: 1
+I1116 18:31:33.384099 3231556 torch_asr_model.cc:37] Num inter-op threads: 1
+I1116 18:31:34.026520 3231556 torch_asr_model.cc:80] Torch Model Info:
+I1116 18:31:34.026582 3231556 torch_asr_model.cc:81] 	subsampling_rate 6
+I1116 18:31:34.026587 3231556 torch_asr_model.cc:82] 	right context 10
+I1116 18:31:34.026592 3231556 torch_asr_model.cc:83] 	sos 8004
+I1116 18:31:34.026595 3231556 torch_asr_model.cc:84] 	eos 8004
+I1116 18:31:34.026599 3231556 torch_asr_model.cc:85] 	is bidirectional decoder 1
+I1116 18:31:34.026609 3231556 params.h:193] Reading unit table ./model/release_malay-eng-model_500imda_200King_31mix_splice100/words.txt2
+I1116 18:31:34.036643 3231556 params.h:222] Reading context ./hot_word_dir/
+I1116 18:31:34.046630 3231556 context_graph.cc:69] Contexts count size: 1217
+I1116 18:31:37.240574 3231556 context_graph.cc:69] Contexts count size: 1181
+I1116 18:31:40.276466 3231556 context_graph.cc:69] Contexts count size: 1166
+I1116 18:31:43.226308 3231556 context_graph.cc:69] Contexts count size: 1181
+I1116 18:31:46.242619 3231556 context_graph.cc:69] Contexts count size: 1181
+I1116 18:31:49.252440 3231556 decoder_main.cc:192] 1
+I1116 18:31:49.252494 3231556 decoder_main.cc:200] 使用第1个列表解码 
+I1116 18:31:49.264429 3231663 decoder_main.cc:61] num frames 188
+I1116 18:31:49.264601 3231663 asr_decoder.cc:104] Required 2147483647 get 188
+I1116 18:31:49.812459 3231663 asr_decoder.cc:212] Partial CTC result a khabar dah boleh pagi
+I1116 18:31:49.814688 3231663 asr_decoder.cc:212] Partial CTC result a khabar dah boleh pagi
+I1116 18:31:50.045693 3231663 asr_decoder.cc:84] Rescoring cost latency: 233ms.
+I1116 18:31:50.045766 3231663 decoder_main.cc:79] Partial result: khabar dah boleh pagi
+I1116 18:31:50.045832 3231663 decoder_main.cc:160] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00005 word_pieces [{"sentence":"khabar dah boleh pagi","word_pieces":[{"word":"▁KHABAR_malay","start":380,"end":480},{"word":"▁DA","start":920,"end":1020},{"word":"H","start":1020,"end":1080},{"word":"▁BO","start":1080,"end":1140},{"word":"LE","start":1140,"end":1200},{"word":"H","start":1200,"end":1260},{"word":"▁PAGI_malay","start":1460,"end":1560}]}]
+I1116 18:31:50.045853 3231663 decoder_main.cc:164] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00005 Final result: khabar dah boleh pagi
+I1116 18:31:50.045866 3231663 decoder_main.cc:165] Decoded 1900ms audio taken 781ms.
+I1116 18:31:50.066982 3231663 decoder_main.cc:61] num frames 371
+I1116 18:31:50.067167 3231663 asr_decoder.cc:104] Required 2147483647 get 371
+I1116 18:31:52.919625 3231663 asr_decoder.cc:212] Partial CTC result today we are recording kita record our second podcast
+I1116 18:31:52.922080 3231663 asr_decoder.cc:212] Partial CTC result today we are recording kita record our second podcast
+I1116 18:31:54.067687 3231663 asr_decoder.cc:84] Rescoring cost latency: 1147ms.
+I1116 18:31:54.067770 3231663 decoder_main.cc:79] Partial result: today we are recording kita record our second podcast
+I1116 18:31:54.067843 3231663 decoder_main.cc:160] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00007 word_pieces [{"sentence":"today we are recording kita record our second podcast","word_pieces":[{"word":"▁TODAY","start":200,"end":300},{"word":"▁WE","start":380,"end":480},{"word":"▁ARE","start":500,"end":600},{"word":"▁RECORDING","start":860,"end":960},{"word":"▁KITA_malay","start":1640,"end":1740},{"word":"▁RECORD","start":2000,"end":2100},{"word":"▁OUR","start":2360,"end":2460},{"word":"▁SECOND","start":2660,"end":2760},{"word":"▁PODCAST","start":3080,"end":3180}]}]
+I1116 18:31:54.067864 3231663 decoder_main.cc:164] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00007 Final result: today we are recording kita record our second podcast
+I1116 18:31:54.067869 3231663 decoder_main.cc:165] Decoded 3730ms audio taken 4000ms.
+I1116 18:31:54.078404 3231663 decoder_main.cc:61] num frames 179
+I1116 18:31:54.078548 3231663 asr_decoder.cc:104] Required 2147483647 get 179
+I1116 18:31:56.581583 3231663 asr_decoder.cc:212] Partial CTC result nama podcast kita apa
+I1116 18:31:56.583791 3231663 asr_decoder.cc:212] Partial CTC result nama podcast kita apa
+I1116 18:31:57.663300 3231663 asr_decoder.cc:84] Rescoring cost latency: 1081ms.
+I1116 18:31:57.663367 3231663 decoder_main.cc:79] Partial result: nama podcast kita apa
+I1116 18:31:57.663414 3231663 decoder_main.cc:160] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00009 word_pieces [{"sentence":"nama podcast kita apa","word_pieces":[{"word":"▁NAMA_malay","start":80,"end":180},{"word":"▁PODCAST","start":380,"end":480},{"word":"▁KITA_malay","start":920,"end":1020},{"word":"▁A","start":1100,"end":1200},{"word":"PA","start":1200,"end":1260}]}]
+I1116 18:31:57.663431 3231663 decoder_main.cc:164] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00009 Final result: nama podcast kita apa
+I1116 18:31:57.663436 3231663 decoder_main.cc:165] Decoded 1809ms audio taken 3584ms.
+I1116 18:31:57.696413 3231663 decoder_main.cc:61] num frames 579
+I1116 18:31:57.696650 3231663 asr_decoder.cc:104] Required 2147483647 get 579
+I1116 18:32:00.362277 3231663 asr_decoder.cc:212] Partial CTC result tak ingat dulu lepas kerja kita selalu buat full testing
+I1116 18:32:00.364786 3231663 asr_decoder.cc:212] Partial CTC result tak ingat dulu lepas kerja kita selalu buat full testing
+I1116 18:32:01.250465 3231663 asr_decoder.cc:84] Rescoring cost latency: 887ms.
+I1116 18:32:01.250536 3231663 decoder_main.cc:79] Partial result: tak ingat dulu lepas kerja kita selalu buat full testing
+I1116 18:32:01.250622 3231663 decoder_main.cc:160] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00011 word_pieces [{"sentence":"tak ingat dulu lepas kerja kita selalu buat full testing","word_pieces":[{"word":"▁TAK_malay","start":140,"end":240},{"word":"▁INGAT_malay","start":1040,"end":1140},{"word":"▁DULU_malay","start":1340,"end":1440},{"word":"▁LEPAS_malay","start":1640,"end":1740},{"word":"▁KERJA_malay","start":1940,"end":2040},{"word":"▁KITA_malay","start":2240,"end":2340},{"word":"▁SELALU_malay","start":2540,"end":2640},{"word":"▁BU","start":2780,"end":2880},{"word":"AT","start":2900,"end":3000},{"word":"▁FULL","start":3080,"end":3180},{"word":"▁TESTING","start":3380,"end":3480}]}]
+I1116 18:32:01.250644 3231663 decoder_main.cc:164] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00011 Final result: tak ingat dulu lepas kerja kita selalu buat full testing
+I1116 18:32:01.250649 3231663 decoder_main.cc:165] Decoded 5809ms audio taken 3554ms.
+I1116 18:32:01.275527 3231663 decoder_main.cc:61] num frames 441
+I1116 18:32:01.275712 3231663 asr_decoder.cc:104] Required 2147483647 get 441
+I1116 18:32:04.179636 3231663 asr_decoder.cc:212] Partial CTC result kita buat podcast je kita akan berbual pasal
+I1116 18:32:04.182020 3231663 asr_decoder.cc:212] Partial CTC result kita buat podcast je kita akan berbual pasal
+I1116 18:32:05.197780 3231663 asr_decoder.cc:84] Rescoring cost latency: 1017ms.
+I1116 18:32:05.197854 3231663 decoder_main.cc:79] Partial result: kita buat podcast kita akan berbual pasal
+I1116 18:32:05.197929 3231663 decoder_main.cc:160] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00015 word_pieces [{"sentence":"kita buat podcast kita akan berbual pasal","word_pieces":[{"word":"▁KITA_malay","start":320,"end":420},{"word":"▁BU","start":860,"end":960},{"word":"AT","start":1100,"end":1200},{"word":"▁PODCAST","start":1820,"end":1920},{"word":"▁KITA_malay","start":2540,"end":2640},{"word":"▁AKAN_malay","start":2780,"end":2880},{"word":"▁BERBUAL_malay","start":3200,"end":3300},{"word":"▁PA","start":3680,"end":3780},{"word":"S","start":3860,"end":3960},{"word":"AL","start":3980,"end":4080}]}]
+I1116 18:32:05.197952 3231663 decoder_main.cc:164] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00015 Final result: kita buat podcast kita akan berbual pasal
+I1116 18:32:05.197957 3231663 decoder_main.cc:165] Decoded 4426ms audio taken 3922ms.
+I1116 18:32:05.206333 3231663 decoder_main.cc:61] num frames 140
+I1116 18:32:05.206463 3231663 asr_decoder.cc:104] Required 2147483647 get 140
+I1116 18:32:07.680016 3231663 asr_decoder.cc:212] Partial CTC result banyak banyak
+I1116 18:32:07.681895 3231663 asr_decoder.cc:212] Partial CTC result banyak banyak
+I1116 18:32:08.074451 3231663 asr_decoder.cc:84] Rescoring cost latency: 394ms.
+I1116 18:32:08.074523 3231663 decoder_main.cc:79] Partial result: banyak banyak benda
+I1116 18:32:08.074564 3231663 decoder_main.cc:160] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00016 word_pieces [{"sentence":"banyak banyak benda","word_pieces":[{"word":"▁BANYAK_malay","start":380,"end":480},{"word":"▁BANYAK_malay","start":740,"end":840},{"word":"▁BENDA_malay","start":1160,"end":1260}]}]
+I1116 18:32:08.074579 3231663 decoder_main.cc:164] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00016 Final result: banyak banyak benda
+I1116 18:32:08.074584 3231663 decoder_main.cc:165] Decoded 1423ms audio taken 2868ms.
+I1116 18:32:08.109158 3231663 decoder_main.cc:61] num frames 620
+I1116 18:32:08.109401 3231663 asr_decoder.cc:104] Required 2147483647 get 620
+I1116 18:32:14.959795 3231663 asr_decoder.cc:212] Partial CTC result ini today aku ada akuya<unk> car prak tu
+I1116 18:32:14.962281 3231663 asr_decoder.cc:212] Partial CTC result ini today aku ada akuya<unk> car prak tu
+I1116 18:32:15.634811 3231663 asr_decoder.cc:84] Rescoring cost latency: 674ms.
+I1116 18:32:15.634884 3231663 decoder_main.cc:79] Partial result: ini today aku ada aku punya<unk> car prac tu
+I1116 18:32:15.634997 3231663 decoder_main.cc:160] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00020 word_pieces [{"sentence":"ini today aku ada aku punya<unk> car prac tu","word_pieces":[{"word":"▁INI_malay","start":620,"end":720},{"word":"▁TODAY","start":1460,"end":1560},{"word":"▁AKU_malay","start":2660,"end":2760},{"word":"▁ADA_malay","start":2900,"end":3000},{"word":"▁AKU_malay","start":3140,"end":3240},{"word":"▁PUN","start":3320,"end":3420},{"word":"Y","start":3420,"end":3480},{"word":"A","start":3500,"end":3600},{"word":"<unk>","start":4520,"end":4620},{"word":"▁CAR","start":4640,"end":4740},{"word":"▁PRA","start":4940,"end":5040},{"word":"C","start":5060,"end":5160},{"word":"▁TU","start":5240,"end":5340}]}]
+I1116 18:32:15.635030 3231663 decoder_main.cc:164] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00020 Final result: ini today aku ada aku punya<unk> car prac tu
+I1116 18:32:15.635036 3231663 decoder_main.cc:165] Decoded 6220ms audio taken 7525ms.
+I1116 18:32:15.639813 3231663 decoder_main.cc:61] num frames 73
+I1116 18:32:15.639925 3231663 asr_decoder.cc:104] Required 2147483647 get 73
+I1116 18:32:18.362227 3231663 asr_decoder.cc:212] Partial CTC result my car
+I1116 18:32:18.364418 3231663 asr_decoder.cc:212] Partial CTC result my car
+I1116 18:32:18.605618 3231663 asr_decoder.cc:84] Rescoring cost latency: 243ms.
+I1116 18:32:18.605687 3231663 decoder_main.cc:79] Partial result: my car
+I1116 18:32:18.605727 3231663 decoder_main.cc:160] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00022 word_pieces [{"sentence":"my car","word_pieces":[{"word":"▁MY","start":140,"end":240},{"word":"▁CAR","start":320,"end":420}]}]
+I1116 18:32:18.605746 3231663 decoder_main.cc:164] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00022 Final result: my car
+I1116 18:32:18.605753 3231663 decoder_main.cc:165] Decoded 745ms audio taken 2965ms.
+I1116 18:32:18.615526 3231663 decoder_main.cc:61] num frames 165
+I1116 18:32:18.615654 3231663 asr_decoder.cc:104] Required 2147483647 get 165
+I1116 18:32:22.816540 3231663 asr_decoder.cc:212] Partial CTC result aku aku drive the car you
+I1116 18:32:22.818799 3231663 asr_decoder.cc:212] Partial CTC result aku aku drive the car you
+I1116 18:32:23.521622 3231663 asr_decoder.cc:84] Rescoring cost latency: 704ms.
+I1116 18:32:23.521694 3231663 decoder_main.cc:79] Partial result: aku aku drive the car you
+I1116 18:32:23.521760 3231663 decoder_main.cc:160] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00026 word_pieces [{"sentence":"aku aku drive the car you","word_pieces":[{"word":"▁AKU_malay","start":200,"end":300},{"word":"▁AKU_malay","start":560,"end":660},{"word":"▁DRIVE","start":740,"end":840},{"word":"▁THE","start":1100,"end":1200},{"word":"▁CAR","start":1220,"end":1320},{"word":"▁YOU","start":1400,"end":1500}]}]
+I1116 18:32:23.521802 3231663 decoder_main.cc:164] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00026 Final result: aku aku drive the car you
+I1116 18:32:23.521811 3231663 decoder_main.cc:165] Decoded 1670ms audio taken 4906ms.
+I1116 18:32:23.533883 3231663 decoder_main.cc:61] num frames 208
+I1116 18:32:23.534029 3231663 asr_decoder.cc:104] Required 2147483647 get 208
+I1116 18:32:25.951289 3231663 asr_decoder.cc:212] Partial CTC result i don't know but the car will be moving
+I1116 18:32:25.953719 3231663 asr_decoder.cc:212] Partial CTC result i don't know but the car will be moving
+I1116 18:32:26.231164 3231663 asr_decoder.cc:84] Rescoring cost latency: 279ms.
+I1116 18:32:26.231237 3231663 decoder_main.cc:79] Partial result: i don't know but the car will be moving
+I1116 18:32:26.231356 3231663 decoder_main.cc:160] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00028 word_pieces [{"sentence":"i don't know but the car will be moving","word_pieces":[{"word":"▁I","start":80,"end":180},{"word":"▁DON","start":200,"end":300},{"word":"'","start":300,"end":360},{"word":"T","start":360,"end":420},{"word":"▁KNOW","start":440,"end":540},{"word":"▁BUT","start":860,"end":960},{"word":"▁THE","start":1040,"end":1140},{"word":"▁CAR","start":1220,"end":1320},{"word":"▁WILL","start":1460,"end":1560},{"word":"▁BE","start":1580,"end":1680},{"word":"▁MOVING","start":1700,"end":1800}]}]
+I1116 18:32:26.231391 3231663 decoder_main.cc:164] 2022_08_25-sess01-spk_M_M_002-spk_F_M_007_00028 Final result: i don't know but the car will be moving
+I1116 18:32:26.231398 3231663 decoder_main.cc:165] Decoded 2100ms audio taken 2697ms.
+I1116 18:32:26.232003 3231556 decoder_main.cc:237] Total: decoded 29832ms audio taken 36802ms.
+I1116 18:32:26.232036 3231556 decoder_main.cc:239] RTF: 1.234

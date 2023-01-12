@@ -15,9 +15,9 @@
 #include <iomanip>
 #include <thread>
 #include <utility>
-
+#include "boost/json/src.hpp"
 #include "decoder/params.h"
-#include "frontend/wav.h"
+#include "frontend/wav2.h"
 #include "utils/flags.h"
 #include "utils/string.h"
 #include "utils/thread_pool.h"
@@ -28,6 +28,7 @@ DEFINE_bool(simulate_streaming, false, "simulate streaming input");
 DEFINE_bool(output_nbest, false, "output n-best of decode result");
 DEFINE_string(wav_path, "", "single wave path");
 DEFINE_string(wav_scp, "", "input wav scp");
+DEFINE_int32(hotlist, 0, "hotlist");
 DEFINE_string(result, "", "result output file");
 DEFINE_bool(continuous_decoding, false, "continuous decoding mode");
 DEFINE_int32(thread_num, 1, "num of decode thread");
@@ -35,11 +36,18 @@ DEFINE_int32(thread_num, 1, "num of decode thread");
 std::shared_ptr<wenet::DecodeOptions> g_decode_config;
 std::shared_ptr<wenet::FeaturePipelineConfig> g_feature_config;
 std::shared_ptr<wenet::DecodeResource> g_decode_resource;
-
+namespace json = boost::json;
 std::ofstream g_result;
 std::mutex g_mutex;
 int g_total_waves_dur = 0;
 int g_total_decode_time = 0;
+
+
+// std::string SerializeResult(bool finish) {
+
+//   return json::serialize(nbest);
+// }
+
 
 void decode(std::pair<std::string, std::string> wav) {
   wenet::WavReader wav_reader(wav.second);
@@ -74,9 +82,37 @@ void decode(std::pair<std::string, std::string> wav) {
     if (FLAGS_continuous_decoding && state == wenet::DecodeState::kEndpoint) {
       if (decoder.DecodedSomething()) {
         decoder.Rescoring();
+
+        // word_piece
+          json::array nbest;
+          for (const wenet::DecodeResult& path : decoder.result()) {
+            json::object jpath({{"sentence", path.sentence}});
+            if (true) {
+              json::array word_pieces;
+              for (const wenet::WordPiece& word_piece : path.word_pieces) {
+                json::object jword_piece({{"word", word_piece.word},
+                                          {"start", word_piece.start},
+                                          {"end", word_piece.end}});
+                word_pieces.emplace_back(jword_piece);
+              }
+              jpath.emplace("word_pieces", word_pieces);
+            }
+            nbest.emplace_back(jpath);
+
+            if (nbest.size() == 1) {
+              break;
+            }
+          }
+          LOG(INFO) << wav.first <<" word_pieces " << json::serialize(nbest);
+        //word_piece
         LOG(INFO) << "Final result (continuous decoding): "
                   << decoder.result()[0].sentence;
         final_result.append(decoder.result()[0].sentence);
+
+
+
+
+
       }
       decoder.ResetContinuousDecoding();
     }
@@ -100,6 +136,31 @@ void decode(std::pair<std::string, std::string> wav) {
   if (decoder.DecodedSomething()) {
     final_result.append(decoder.result()[0].sentence);
   }
+  
+// word_piece
+  json::array nbest;
+  for (const wenet::DecodeResult& path : decoder.result()) {
+    json::object jpath({{"sentence", path.sentence}});
+    if (true) {
+      json::array word_pieces;
+      for (const wenet::WordPiece& word_piece : path.word_pieces) {
+        json::object jword_piece({{"word", word_piece.word},
+                                  {"start", word_piece.start},
+                                  {"end", word_piece.end}});
+        word_pieces.emplace_back(jword_piece);
+      }
+      jpath.emplace("word_pieces", word_pieces);
+    }
+    nbest.emplace_back(jpath);
+
+    if (nbest.size() == 1) {
+      break;
+    }
+  }
+  LOG(INFO) << wav.first <<" word_pieces " << json::serialize(nbest);
+//word_piece
+
+
   LOG(INFO) << wav.first << " Final result: " << final_result << std::endl;
   LOG(INFO) << "Decoded " << wave_dur << "ms audio taken " << decode_time
             << "ms.";
@@ -128,6 +189,22 @@ int main(int argc, char* argv[]) {
   g_decode_config = wenet::InitDecodeOptionsFromFlags();
   g_feature_config = wenet::InitFeaturePipelineConfigFromFlags();
   g_decode_resource = wenet::InitDecodeResourceFromFlags();
+  LOG(INFO) << FLAGS_hotlist ;
+  if (FLAGS_hotlist==0){
+      g_decode_resource->context_graph= nullptr;
+      LOG(INFO) << "不使用热词解码 " ;
+  }
+
+  else if (FLAGS_hotlist<=99){
+      g_decode_resource->context_graph= g_decode_resource->context_graph_list[FLAGS_hotlist-1];
+      LOG(INFO) << "使用第"<<FLAGS_hotlist<<"个列表解码 " ;
+  }
+  else{
+      g_decode_resource->context_graph= nullptr;
+      LOG(INFO) << "不存在指定热词列表,不使用热词解码 " ;
+
+  }
+
 
   if (FLAGS_wav_path.empty() && FLAGS_wav_scp.empty()) {
     LOG(FATAL) << "Please provide the wave path or the wav scp.";

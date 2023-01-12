@@ -1,0 +1,8 @@
+# wav-to-duration --read-entire-file=false scp:/home3/yuhang001/new_wenet/wenet/examples/gigaspeech/release_singapo_eng/data/imda-part2/split4utt/1/wav.scp ark,t:/home3/yuhang001/new_wenet/wenet/examples/gigaspeech/release_singapo_eng/data/imda-part2/split4utt/1/utt2dur 
+# Started at Tue Jul 26 18:17:59 +08 2022
+#
+wav-to-duration --read-entire-file=false scp:/home3/yuhang001/new_wenet/wenet/examples/gigaspeech/release_singapo_eng/data/imda-part2/split4utt/1/wav.scp ark,t:/home3/yuhang001/new_wenet/wenet/examples/gigaspeech/release_singapo_eng/data/imda-part2/split4utt/1/utt2dur 
+LOG (wav-to-duration[5.5.888~1-d619]:main():wav-to-duration.cc:92) Printed duration for 294 audio files.
+LOG (wav-to-duration[5.5.888~1-d619]:main():wav-to-duration.cc:94) Mean duration was 4.95898, min and max durations were 1.94, 11.08
+# Accounting: time=27 threads=1
+# Ended (code 0) at Tue Jul 26 18:18:26 +08 2022, elapsed time 27 seconds

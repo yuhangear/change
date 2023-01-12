@@ -1,17 +1,5 @@
-// Copyright (c) 2020 Mobvoi Inc (Binbin Zhang)
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+// Copyright 2020 Mobvoi Inc. All Rights Reserved.
+// Author: binbinzhang@mobvoi.com (Binbin Zhang)
 
 #include "decoder/ctc_prefix_beam_search.h"
 
@@ -105,8 +93,8 @@ void CtcPrefixBeamSearch::UpdateHypotheses(
 // it.
 void CtcPrefixBeamSearch::Search(const std::vector<std::vector<float>>& logp) {
   if (logp.size() == 0) return;
-  int first_beam_size =
-      std::min(static_cast<int>(logp[0].size()), opts_.first_beam_size);
+  int first_beam_size = std::min(static_cast<int>(logp[0].size()),
+                                 opts_.first_beam_size);
   for (int t = 0; t < logp.size(); ++t, ++abs_time_step_) {
     const std::vector<float>& logp_t = logp[t];
     std::unordered_map<std::vector<int>, PrefixScore, PrefixHash> next_hyps;
@@ -116,10 +104,15 @@ void CtcPrefixBeamSearch::Search(const std::vector<std::vector<float>>& logp) {
     TopK(logp_t, first_beam_size, &topk_score, &topk_index);
 
     // 2. Token passing
-    for (int i = 0; i < topk_index.size(); ++i) {
+	for (const auto& it : cur_hyps_) {
+		  if (context_graph_) {
+			context_graph_->refreash_cache=true;
+          }
+		
+		for (int i = 0; i < topk_index.size(); ++i) {
       int id = topk_index[i];
       auto prob = topk_score[i];
-      for (const auto& it : cur_hyps_) {
+
         const std::vector<int>& prefix = it.first;
         const PrefixScore& prefix_score = it.second;
         // If prefix doesn't exist in next_hyps, next_hyps[prefix] will insert

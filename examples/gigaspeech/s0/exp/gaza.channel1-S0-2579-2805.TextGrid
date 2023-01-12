@@ -1,0 +1,82 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 2.2199999999999998
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 2.2199999999999998
+		intervals: size = 17
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.3
+				text = "▁ON"
+			intervals [3]:
+				xmin = 0.3
+				xmax = 0.3001
+				text = ""
+			intervals [4]:
+				xmin = 0.3001
+				xmax = 0.42
+				text = "▁THE"
+			intervals [5]:
+				xmin = 0.42
+				xmax = 0.4201
+				text = ""
+			intervals [6]:
+				xmin = 0.4201
+				xmax = 0.84
+				text = "▁SEVENTH"
+			intervals [7]:
+				xmin = 0.84
+				xmax = 0.8401
+				text = ""
+			intervals [8]:
+				xmin = 0.8401
+				xmax = 0.9
+				text = "▁OF"
+			intervals [9]:
+				xmin = 0.9
+				xmax = 0.9001
+				text = ""
+			intervals [10]:
+				xmin = 0.9001
+				xmax = 1.08
+				text = "▁MAY"
+			intervals [11]:
+				xmin = 1.08
+				xmax = 1.0801
+				text = ""
+			intervals [12]:
+				xmin = 1.0801
+				xmax = 1.32
+				text = "▁TO"
+			intervals [13]:
+				xmin = 1.32
+				xmax = 1.3201
+				text = ""
+			intervals [14]:
+				xmin = 1.3201
+				xmax = 1.44
+				text = "▁BE"
+			intervals [15]:
+				xmin = 1.44
+				xmax = 1.4401
+				text = ""
+			intervals [16]:
+				xmin = 1.4401
+				xmax = 2.16
+				text = "▁PRECISE"
+			intervals [17]:
+				xmin = 2.16
+				xmax = 2.2199999999999998
+				text = ""

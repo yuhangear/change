@@ -37,7 +37,8 @@ void TorchAsrModel::InitEngineThreads(int num_threads) {
   VLOG(1) << "Num inter-op threads: " << at::get_num_interop_threads();
 }
 
-void TorchAsrModel::Read(const std::string& model_path) {
+  void TorchAsrModel::Read(const std::string& model_path, int sos_id) {
+    // int sos_id = -1;
   torch::DeviceType device = at::kCPU;
 #ifdef USE_GPU
   if (!torch::cuda::is_available()) {
@@ -60,10 +61,18 @@ void TorchAsrModel::Read(const std::string& model_path) {
   right_context_ = o2.toInt();
   torch::jit::IValue o3 = model_->run_method("sos_symbol");
   CHECK_EQ(o3.isInt(), true);
-  sos_ = o3.toInt();
+  if(sos_id == -1){
+    sos_ = o3.toInt();
+  }else{
+    sos_ = sos_id;
+  }
   torch::jit::IValue o4 = model_->run_method("eos_symbol");
   CHECK_EQ(o4.isInt(), true);
-  eos_ = o4.toInt();
+  if(sos_id == -1){
+    eos_ = o4.toInt();
+  }else{
+    eos_ = sos_id;
+  }
   torch::jit::IValue o5 = model_->run_method("is_bidirectional_decoder");
   CHECK_EQ(o5.isBool(), true);
   is_bidirectional_decoder_ = o5.toBool();

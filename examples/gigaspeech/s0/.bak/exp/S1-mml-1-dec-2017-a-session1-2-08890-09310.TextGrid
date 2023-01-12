@@ -1,0 +1,106 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 4.140000000000001
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 4.140000000000001
+		intervals: size = 23
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.36
+				text = "▁S"
+			intervals [3]:
+				xmin = 0.36
+				xmax = 0.3601
+				text = ""
+			intervals [4]:
+				xmin = 0.3601
+				xmax = 0.78
+				text = "INGAPORE▁IS"
+			intervals [5]:
+				xmin = 0.78
+				xmax = 0.7801
+				text = ""
+			intervals [6]:
+				xmin = 0.7801
+				xmax = 0.9
+				text = "▁QUITE"
+			intervals [7]:
+				xmin = 0.9
+				xmax = 0.9001
+				text = ""
+			intervals [8]:
+				xmin = 0.9001
+				xmax = 0.96
+				text = "▁A"
+			intervals [9]:
+				xmin = 0.96
+				xmax = 0.9601
+				text = ""
+			intervals [10]:
+				xmin = 0.9601
+				xmax = 1.14
+				text = "▁PRACTICAL"
+			intervals [11]:
+				xmin = 1.14
+				xmax = 1.1401
+				text = ""
+			intervals [12]:
+				xmin = 1.1401
+				xmax = 1.68
+				text = "▁SOCIETY"
+			intervals [13]:
+				xmin = 1.68
+				xmax = 1.6801
+				text = ""
+			intervals [14]:
+				xmin = 1.6801
+				xmax = 2.04
+				text = "▁RIGHT"
+			intervals [15]:
+				xmin = 2.04
+				xmax = 2.0401000000000002
+				text = ""
+			intervals [16]:
+				xmin = 2.0401000000000002
+				xmax = 2.4
+				text = "▁THEN"
+			intervals [17]:
+				xmin = 2.4
+				xmax = 2.4001
+				text = ""
+			intervals [18]:
+				xmin = 2.4001
+				xmax = 2.64
+				text = "▁LIKE"
+			intervals [19]:
+				xmin = 2.64
+				xmax = 2.6401000000000003
+				text = ""
+			intervals [20]:
+				xmin = 2.6401000000000003
+				xmax = 3.3
+				text = "▁YOU"
+			intervals [21]:
+				xmin = 3.3
+				xmax = 3.3001
+				text = ""
+			intervals [22]:
+				xmin = 3.3001
+				xmax = 4.08
+				text = "▁SHOULD"
+			intervals [23]:
+				xmin = 4.08
+				xmax = 4.140000000000001
+				text = ""

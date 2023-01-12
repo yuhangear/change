@@ -1,0 +1,346 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 9.600000000000001
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 9.600000000000001
+		intervals: size = 83
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.42
+				text = "▁WE"
+			intervals [3]:
+				xmin = 0.42
+				xmax = 0.4201
+				text = ""
+			intervals [4]:
+				xmin = 0.4201
+				xmax = 0.54
+				text = "▁HAVE"
+			intervals [5]:
+				xmin = 0.54
+				xmax = 0.5401
+				text = ""
+			intervals [6]:
+				xmin = 0.5401
+				xmax = 0.6
+				text = "▁TO"
+			intervals [7]:
+				xmin = 0.6
+				xmax = 0.6001
+				text = ""
+			intervals [8]:
+				xmin = 0.6001
+				xmax = 0.72
+				text = "▁MOVE"
+			intervals [9]:
+				xmin = 0.72
+				xmax = 0.7201
+				text = ""
+			intervals [10]:
+				xmin = 0.7201
+				xmax = 0.9
+				text = "▁ON"
+			intervals [11]:
+				xmin = 0.9
+				xmax = 0.9001
+				text = ""
+			intervals [12]:
+				xmin = 0.9001
+				xmax = 1.08
+				text = "▁WITH"
+			intervals [13]:
+				xmin = 1.08
+				xmax = 1.0801
+				text = ""
+			intervals [14]:
+				xmin = 1.0801
+				xmax = 1.26
+				text = "▁LIFE"
+			intervals [15]:
+				xmin = 1.26
+				xmax = 1.2601
+				text = ""
+			intervals [16]:
+				xmin = 1.2601
+				xmax = 1.44
+				text = "▁LA"
+			intervals [17]:
+				xmin = 1.44
+				xmax = 1.4401
+				text = ""
+			intervals [18]:
+				xmin = 1.4401
+				xmax = 1.74
+				text = "H▁NO"
+			intervals [19]:
+				xmin = 1.74
+				xmax = 1.7401
+				text = ""
+			intervals [20]:
+				xmin = 1.7401
+				xmax = 1.92
+				text = "▁POINT"
+			intervals [21]:
+				xmin = 1.92
+				xmax = 1.9201
+				text = ""
+			intervals [22]:
+				xmin = 1.9201
+				xmax = 2.22
+				text = "▁LIKE"
+			intervals [23]:
+				xmin = 2.22
+				xmax = 2.2201000000000004
+				text = ""
+			intervals [24]:
+				xmin = 2.2201000000000004
+				xmax = 2.64
+				text = "▁Y"
+			intervals [25]:
+				xmin = 2.64
+				xmax = 2.6401000000000003
+				text = ""
+			intervals [26]:
+				xmin = 2.6401000000000003
+				xmax = 3.24
+				text = "<unk>"
+			intervals [27]:
+				xmin = 3.24
+				xmax = 3.2401000000000004
+				text = ""
+			intervals [28]:
+				xmin = 3.2401000000000004
+				xmax = 3.42
+				text = "▁YOU"
+			intervals [29]:
+				xmin = 3.42
+				xmax = 3.4201
+				text = ""
+			intervals [30]:
+				xmin = 3.4201
+				xmax = 4.14
+				text = "▁REMEMBER"
+			intervals [31]:
+				xmin = 4.14
+				xmax = 4.1400999999999994
+				text = ""
+			intervals [32]:
+				xmin = 4.1400999999999994
+				xmax = 4.5
+				text = "▁ABOUT"
+			intervals [33]:
+				xmin = 4.5
+				xmax = 4.5001
+				text = ""
+			intervals [34]:
+				xmin = 4.5001
+				xmax = 4.62
+				text = "▁THIS"
+			intervals [35]:
+				xmin = 4.62
+				xmax = 4.6201
+				text = ""
+			intervals [36]:
+				xmin = 4.6201
+				xmax = 4.8
+				text = "▁KIND"
+			intervals [37]:
+				xmin = 4.8
+				xmax = 4.8001
+				text = ""
+			intervals [38]:
+				xmin = 4.8001
+				xmax = 4.98
+				text = "▁OF"
+			intervals [39]:
+				xmin = 4.98
+				xmax = 4.9801
+				text = ""
+			intervals [40]:
+				xmin = 4.9801
+				xmax = 5.1
+				text = "▁BAD"
+			intervals [41]:
+				xmin = 5.1
+				xmax = 5.100099999999999
+				text = ""
+			intervals [42]:
+				xmin = 5.100099999999999
+				xmax = 5.34
+				text = "▁THINGS"
+			intervals [43]:
+				xmin = 5.34
+				xmax = 5.3401
+				text = ""
+			intervals [44]:
+				xmin = 5.3401
+				xmax = 5.64
+				text = "▁ALL"
+			intervals [45]:
+				xmin = 5.64
+				xmax = 5.6400999999999994
+				text = ""
+			intervals [46]:
+				xmin = 5.6400999999999994
+				xmax = 5.76
+				text = "▁THE"
+			intervals [47]:
+				xmin = 5.76
+				xmax = 5.7600999999999996
+				text = ""
+			intervals [48]:
+				xmin = 5.7600999999999996
+				xmax = 5.94
+				text = "▁WHILE"
+			intervals [49]:
+				xmin = 5.94
+				xmax = 5.9401
+				text = ""
+			intervals [50]:
+				xmin = 5.9401
+				xmax = 6.66
+				text = "▁BECAUSE"
+			intervals [51]:
+				xmin = 6.66
+				xmax = 6.6601
+				text = ""
+			intervals [52]:
+				xmin = 6.6601
+				xmax = 6.78
+				text = "▁LIKE"
+			intervals [53]:
+				xmin = 6.78
+				xmax = 6.7801
+				text = ""
+			intervals [54]:
+				xmin = 6.7801
+				xmax = 6.96
+				text = "▁EVEN"
+			intervals [55]:
+				xmin = 6.96
+				xmax = 6.9601
+				text = ""
+			intervals [56]:
+				xmin = 6.9601
+				xmax = 7.14
+				text = "▁THOUGH"
+			intervals [57]:
+				xmin = 7.14
+				xmax = 7.1400999999999994
+				text = ""
+			intervals [58]:
+				xmin = 7.1400999999999994
+				xmax = 7.38
+				text = "▁LIKE"
+			intervals [59]:
+				xmin = 7.38
+				xmax = 7.3801
+				text = ""
+			intervals [60]:
+				xmin = 7.3801
+				xmax = 7.5
+				text = "▁I"
+			intervals [61]:
+				xmin = 7.5
+				xmax = 7.5001
+				text = ""
+			intervals [62]:
+				xmin = 7.5001
+				xmax = 7.62
+				text = "▁DIDN"
+			intervals [63]:
+				xmin = 7.62
+				xmax = 7.6201
+				text = ""
+			intervals [64]:
+				xmin = 7.6201
+				xmax = 7.86
+				text = "'T▁FEEL"
+			intervals [65]:
+				xmin = 7.86
+				xmax = 7.8601
+				text = ""
+			intervals [66]:
+				xmin = 7.8601
+				xmax = 7.98
+				text = "▁LIKE"
+			intervals [67]:
+				xmin = 7.98
+				xmax = 7.9801
+				text = ""
+			intervals [68]:
+				xmin = 7.9801
+				xmax = 8.1
+				text = "▁HE"
+			intervals [69]:
+				xmin = 8.1
+				xmax = 8.1001
+				text = ""
+			intervals [70]:
+				xmin = 8.1001
+				xmax = 8.22
+				text = "▁WAS"
+			intervals [71]:
+				xmin = 8.22
+				xmax = 8.2201
+				text = ""
+			intervals [72]:
+				xmin = 8.2201
+				xmax = 8.34
+				text = "▁A"
+			intervals [73]:
+				xmin = 8.34
+				xmax = 8.3401
+				text = ""
+			intervals [74]:
+				xmin = 8.3401
+				xmax = 8.46
+				text = "▁GOOD"
+			intervals [75]:
+				xmin = 8.46
+				xmax = 8.4601
+				text = ""
+			intervals [76]:
+				xmin = 8.4601
+				xmax = 8.82
+				text = "▁SUPERIOR"
+			intervals [77]:
+				xmin = 8.82
+				xmax = 8.8201
+				text = ""
+			intervals [78]:
+				xmin = 8.8201
+				xmax = 9.06
+				text = "▁BUT"
+			intervals [79]:
+				xmin = 9.06
+				xmax = 9.0601
+				text = ""
+			intervals [80]:
+				xmin = 9.0601
+				xmax = 9.3
+				text = "▁AT"
+			intervals [81]:
+				xmin = 9.3
+				xmax = 9.3001
+				text = ""
+			intervals [82]:
+				xmin = 9.3001
+				xmax = 9.54
+				text = "▁LEAST"
+			intervals [83]:
+				xmin = 9.54
+				xmax = 9.600000000000001
+				text = ""

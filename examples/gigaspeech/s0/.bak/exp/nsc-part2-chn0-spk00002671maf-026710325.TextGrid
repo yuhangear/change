@@ -1,0 +1,90 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 4.800000000000001
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 4.800000000000001
+		intervals: size = 19
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 1.26
+				text = "▁SANDLAND"
+			intervals [3]:
+				xmin = 1.26
+				xmax = 1.2601
+				text = ""
+			intervals [4]:
+				xmin = 1.2601
+				xmax = 1.56
+				text = "▁ROAD"
+			intervals [5]:
+				xmin = 1.56
+				xmax = 1.5601
+				text = ""
+			intervals [6]:
+				xmin = 1.5601
+				xmax = 1.92
+				text = "▁THE"
+			intervals [7]:
+				xmin = 1.92
+				xmax = 1.9201
+				text = ""
+			intervals [8]:
+				xmin = 1.9201
+				xmax = 2.16
+				text = "▁JAPANESE"
+			intervals [9]:
+				xmin = 2.16
+				xmax = 2.1601000000000004
+				text = ""
+			intervals [10]:
+				xmin = 2.1601000000000004
+				xmax = 2.7
+				text = "▁SCHOOL"
+			intervals [11]:
+				xmin = 2.7
+				xmax = 2.7001000000000004
+				text = ""
+			intervals [12]:
+				xmin = 2.7001000000000004
+				xmax = 2.94
+				text = "▁AND"
+			intervals [13]:
+				xmin = 2.94
+				xmax = 2.9401
+				text = ""
+			intervals [14]:
+				xmin = 2.9401
+				xmax = 3.36
+				text = "▁JALAN"
+			intervals [15]:
+				xmin = 3.36
+				xmax = 3.3601
+				text = ""
+			intervals [16]:
+				xmin = 3.3601
+				xmax = 3.66
+				text = "▁ULU"
+			intervals [17]:
+				xmin = 3.66
+				xmax = 3.6601000000000004
+				text = ""
+			intervals [18]:
+				xmin = 3.6601000000000004
+				xmax = 4.74
+				text = "▁SEMBAWANG"
+			intervals [19]:
+				xmin = 4.74
+				xmax = 4.800000000000001
+				text = ""

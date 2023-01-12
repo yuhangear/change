@@ -1,0 +1,19 @@
+I1116 19:12:31.361891 3237792 websocket_client.cc:67] {"status":"ok","type":"server_ready"}
+I1116 19:12:31.363574 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:31.864007 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:32.364506 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:32.864987 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:33.365550 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:33.866124 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:34.366534 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:34.867000 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:35.367552 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:35.868009 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:36.368839 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:36.869655 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:37.370210 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:37.870676 3237789 websocket_client_main.cc:78] Send 4000 samples
+I1116 19:12:38.371404 3237789 websocket_client_main.cc:78] Send 2240 samples
+I1116 19:12:43.205222 3237792 websocket_client.cc:67] {"status":"ok","type":"final_result","nbest":"[{\"sentence\":\"zion bishan biblerian church brunei geylang and lake of green\",\"word_pieces\":[{\"word\":\"▁Z\",\"start\":800,\"end\":900},{\"word\":\"ION\",\"start\":1100,\"end\":1200},{\"word\":\"▁BI\",\"start\":1340,\"end\":1440},{\"word\":\"S\",\"start\":1460,\"end\":1560},{\"word\":\"HAN\",\"start\":1640,\"end\":1740},{\"word\":\"▁BIBLE\",\"start\":2480,\"end\":2580},{\"word\":\"RIAN\",\"start\":3440,\"end\":3540},{\"word\":\"▁CHURCH\",\"start\":3800,\"end\":3900},{\"word\":\"▁BRU\",\"start\":4520,\"end\":4620},{\"word\":\"NE\",\"start\":4760,\"end\":4860},{\"word\":\"I\",\"start\":4880,\"end\":4980},{\"word\":\"▁GE\",\"start\":5060,\"end\":5160},{\"word\":\"Y\",\"start\":5180,\"end\":5280},{\"word\":\"LA\",\"start\":5280,\"end\":5340},{\"word\":\"NG\",\"start\":5360,\"end\":5460},{\"word\":\"▁AND\",\"start\":5660,\"end\":5760},{\"word\":\"▁LAKE\",\"start\":6020,\"end\":6120},{\"word\":\"▁OF\",\"start\":6260,\"end\":6360},{\"word\":\"▁GREEN\",\"start\":6500,\"end\":6600}]}]"}
+I1116 19:12:43.205376 3237792 websocket_client.cc:67] {"status":"ok","type":"speech_end"}
+I1116 19:12:43.205484 3237789 websocket_client_main.cc:86] Total latency: 4333ms.

@@ -60,6 +60,8 @@ class ConnectionHandler {
 
   bool continuous_decoding_ = false;
   int nbest_ = 1;
+  int hot_list ;
+  int sample_rate ;
   websocket::stream<tcp::socket> ws_;
   std::shared_ptr<FeaturePipelineConfig> feature_config_;
   std::shared_ptr<DecodeOptions> decode_config_;

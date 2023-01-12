@@ -1,0 +1,146 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 3.84
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 3.84
+		intervals: size = 33
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.84
+				text = "▁YA"
+			intervals [3]:
+				xmin = 0.84
+				xmax = 0.8401
+				text = ""
+			intervals [4]:
+				xmin = 0.8401
+				xmax = 1.14
+				text = "H▁HE"
+			intervals [5]:
+				xmin = 1.14
+				xmax = 1.1401
+				text = ""
+			intervals [6]:
+				xmin = 1.1401
+				xmax = 1.32
+				text = "▁REALLY"
+			intervals [7]:
+				xmin = 1.32
+				xmax = 1.3201
+				text = ""
+			intervals [8]:
+				xmin = 1.3201
+				xmax = 1.5
+				text = "▁LIKE"
+			intervals [9]:
+				xmin = 1.5
+				xmax = 1.5001
+				text = ""
+			intervals [10]:
+				xmin = 1.5001
+				xmax = 1.68
+				text = "▁JUST"
+			intervals [11]:
+				xmin = 1.68
+				xmax = 1.6801
+				text = ""
+			intervals [12]:
+				xmin = 1.6801
+				xmax = 1.92
+				text = "▁SC"
+			intervals [13]:
+				xmin = 1.92
+				xmax = 1.9201
+				text = ""
+			intervals [14]:
+				xmin = 1.9201
+				xmax = 2.28
+				text = "OLDED▁ME"
+			intervals [15]:
+				xmin = 2.28
+				xmax = 2.2801
+				text = ""
+			intervals [16]:
+				xmin = 2.2801
+				xmax = 2.46
+				text = "▁FOR"
+			intervals [17]:
+				xmin = 2.46
+				xmax = 2.4601
+				text = ""
+			intervals [18]:
+				xmin = 2.4601
+				xmax = 2.64
+				text = "▁IT"
+			intervals [19]:
+				xmin = 2.64
+				xmax = 2.6401000000000003
+				text = ""
+			intervals [20]:
+				xmin = 2.6401000000000003
+				xmax = 2.76
+				text = "▁YOU"
+			intervals [21]:
+				xmin = 2.76
+				xmax = 2.7601
+				text = ""
+			intervals [22]:
+				xmin = 2.7601
+				xmax = 2.88
+				text = "▁KNOW"
+			intervals [23]:
+				xmin = 2.88
+				xmax = 2.8801
+				text = ""
+			intervals [24]:
+				xmin = 2.8801
+				xmax = 3.0
+				text = "▁THEN"
+			intervals [25]:
+				xmin = 3.0
+				xmax = 3.0001
+				text = ""
+			intervals [26]:
+				xmin = 3.0001
+				xmax = 3.06
+				text = "▁I"
+			intervals [27]:
+				xmin = 3.06
+				xmax = 3.0601000000000003
+				text = ""
+			intervals [28]:
+				xmin = 3.0601000000000003
+				xmax = 3.12
+				text = "▁WAS"
+			intervals [29]:
+				xmin = 3.12
+				xmax = 3.1201000000000003
+				text = ""
+			intervals [30]:
+				xmin = 3.1201000000000003
+				xmax = 3.3
+				text = "▁LIKE"
+			intervals [31]:
+				xmin = 3.3
+				xmax = 3.3001
+				text = ""
+			intervals [32]:
+				xmin = 3.3001
+				xmax = 3.78
+				text = "▁WOW"
+			intervals [33]:
+				xmin = 3.78
+				xmax = 3.84
+				text = ""

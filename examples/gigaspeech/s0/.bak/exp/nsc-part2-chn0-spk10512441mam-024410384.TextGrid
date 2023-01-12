@@ -1,0 +1,106 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 6.300000000000001
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 6.300000000000001
+		intervals: size = 23
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 1.2
+				text = "▁BUANGKOK"
+			intervals [3]:
+				xmin = 1.2
+				xmax = 1.2001
+				text = ""
+			intervals [4]:
+				xmin = 1.2001
+				xmax = 1.44
+				text = "▁VIEW"
+			intervals [5]:
+				xmin = 1.44
+				xmax = 1.4401
+				text = ""
+			intervals [6]:
+				xmin = 1.4401
+				xmax = 2.04
+				text = "▁MANAGEMENT"
+			intervals [7]:
+				xmin = 2.04
+				xmax = 2.0401000000000002
+				text = ""
+			intervals [8]:
+				xmin = 2.0401000000000002
+				xmax = 2.88
+				text = "▁DEVELOPMENT"
+			intervals [9]:
+				xmin = 2.88
+				xmax = 2.8801
+				text = ""
+			intervals [10]:
+				xmin = 2.8801
+				xmax = 3.66
+				text = "▁INSTITUTE"
+			intervals [11]:
+				xmin = 3.66
+				xmax = 3.6601000000000004
+				text = ""
+			intervals [12]:
+				xmin = 3.6601000000000004
+				xmax = 3.96
+				text = "▁OF"
+			intervals [13]:
+				xmin = 3.96
+				xmax = 3.9601
+				text = ""
+			intervals [14]:
+				xmin = 3.9601
+				xmax = 4.56
+				text = "▁SINGAPORE"
+			intervals [15]:
+				xmin = 4.56
+				xmax = 4.560099999999999
+				text = ""
+			intervals [16]:
+				xmin = 4.560099999999999
+				xmax = 4.68
+				text = "▁AND"
+			intervals [17]:
+				xmin = 4.68
+				xmax = 4.6800999999999995
+				text = ""
+			intervals [18]:
+				xmin = 4.6800999999999995
+				xmax = 4.98
+				text = "▁JALAN"
+			intervals [19]:
+				xmin = 4.98
+				xmax = 4.9801
+				text = ""
+			intervals [20]:
+				xmin = 4.9801
+				xmax = 5.28
+				text = "▁ULU"
+			intervals [21]:
+				xmin = 5.28
+				xmax = 5.2801
+				text = ""
+			intervals [22]:
+				xmin = 5.2801
+				xmax = 6.24
+				text = "▁SEMBAWANG"
+			intervals [23]:
+				xmin = 6.24
+				xmax = 6.300000000000001
+				text = ""

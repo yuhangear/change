@@ -859,7 +859,7 @@ void basic_filebuf<CharT, Traits>::_M_write_mode() {
  * N: Marshall Clow
  * E: mclow.lists@gmail.com
  * E: marshall@idio.com
- * D: C++14 support, patches and bug fixes.
+ * D: c++14 support, patches and bug fixes.
  *
  * N: Bill Fisher
  * E: william.w.fisher@gmail.com

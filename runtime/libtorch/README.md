@@ -88,10 +88,19 @@ export GLOG_logtostderr=1
 export GLOG_v=2
 wav_path=your_test_wav_path
 model_dir=your_model_dir
+decoding_mode="attention_rescoring" # ctc_prefix_beam_search
+
+if [ "$decoding_mode" == "attention_rescoring" ]; then
+    rescoring_weight=1.0
+else
+    rescoring_weight=0.0
+fi
+
 ./build/bin/decoder_main \
     --chunk_size -1 \
     --wav_path $wav_path \
     --model_path $model_dir/final.zip \
+    --rescoring_weight $rescoring_weight \
     --unit_path $model_dir/units.txt 2>&1 | tee log.txt
 ```
 
@@ -108,10 +117,18 @@ model_dir=your_model_dir
 export GLOG_logtostderr=1
 export GLOG_v=2
 model_dir=your_model_dir
+decoding_mode="attention_rescoring" # ctc_prefix_beam_search
+
+if [ "$decoding_mode" == "attention_rescoring" ]; then
+    rescoring_weight=1.0
+else
+    rescoring_weight=0.0
+fi
 ./build/bin/websocket_server_main \
     --port 10086 \
     --chunk_size 16 \
     --model_path $model_dir/final.zip \
+    --rescoring_weight $rescoring_weight \
     --unit_path $model_dir/units.txt 2>&1 | tee server.log
 ```
 * Step 4. Start WebSocket client.

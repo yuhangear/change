@@ -1,0 +1,114 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 6.0
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 6.0
+		intervals: size = 25
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.96
+				text = "▁I'"
+			intervals [3]:
+				xmin = 0.96
+				xmax = 0.9601
+				text = ""
+			intervals [4]:
+				xmin = 0.9601
+				xmax = 1.14
+				text = "▁WAITING"
+			intervals [5]:
+				xmin = 1.14
+				xmax = 1.1401
+				text = ""
+			intervals [6]:
+				xmin = 1.1401
+				xmax = 1.62
+				text = "▁FOR"
+			intervals [7]:
+				xmin = 1.62
+				xmax = 1.6201
+				text = ""
+			intervals [8]:
+				xmin = 1.6201
+				xmax = 2.58
+				text = "▁RONALDO"
+			intervals [9]:
+				xmin = 2.58
+				xmax = 2.5801000000000003
+				text = ""
+			intervals [10]:
+				xmin = 2.5801000000000003
+				xmax = 2.82
+				text = "▁TO"
+			intervals [11]:
+				xmin = 2.82
+				xmax = 2.8201
+				text = ""
+			intervals [12]:
+				xmin = 2.8201
+				xmax = 3.06
+				text = "▁COME"
+			intervals [13]:
+				xmin = 3.06
+				xmax = 3.0601000000000003
+				text = ""
+			intervals [14]:
+				xmin = 3.0601000000000003
+				xmax = 3.36
+				text = "▁BACK"
+			intervals [15]:
+				xmin = 3.36
+				xmax = 3.3601
+				text = ""
+			intervals [16]:
+				xmin = 3.3601
+				xmax = 3.72
+				text = "▁FROM"
+			intervals [17]:
+				xmin = 3.72
+				xmax = 3.7201000000000004
+				text = ""
+			intervals [18]:
+				xmin = 3.7201000000000004
+				xmax = 4.32
+				text = "▁BUKIT"
+			intervals [19]:
+				xmin = 4.32
+				xmax = 4.3201
+				text = ""
+			intervals [20]:
+				xmin = 4.3201
+				xmax = 4.62
+				text = "▁BATOK"
+			intervals [21]:
+				xmin = 4.62
+				xmax = 4.6201
+				text = ""
+			intervals [22]:
+				xmin = 4.6201
+				xmax = 4.92
+				text = "▁CENTRAL"
+			intervals [23]:
+				xmin = 4.92
+				xmax = 4.9201
+				text = ""
+			intervals [24]:
+				xmin = 4.9201
+				xmax = 5.94
+				text = "▁LINK"
+			intervals [25]:
+				xmin = 5.94
+				xmax = 6.0
+				text = ""

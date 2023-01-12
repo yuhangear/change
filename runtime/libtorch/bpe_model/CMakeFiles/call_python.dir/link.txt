@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/call_python.dir/src/call_python.cpp.o  -o call_python  -Wl,-rpath,/datadrive/conda/lib /datadrive/conda/lib/libpython3.9.so 

@@ -47,6 +47,8 @@ class WebSocketClient {
   void SendStartSignal();
   void SendEndSignal();
   void set_nbest(int nbest) { nbest_ = nbest; }
+  void set_hot_list(int hot_list_) { hot_list = hot_list_; }
+  void set_sample_rate(int sample_rate_) { sample_rate = sample_rate_; }
   void set_continuous_decoding(bool continuous_decoding) {
     continuous_decoding_ = continuous_decoding;
   }
@@ -57,6 +59,8 @@ class WebSocketClient {
   std::string hostname_;
   int port_;
   int nbest_ = 1;
+  int hot_list=0;
+  int sample_rate=16000;
   bool continuous_decoding_ = false;
   bool done_ = false;
   asio::io_context ioc_;

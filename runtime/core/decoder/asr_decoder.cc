@@ -141,6 +141,24 @@ void AsrDecoder::UpdateResult(bool finish) {
     int offset = global_frame_offset_ * feature_frame_shift_in_ms();
     for (size_t j = 0; j < hypothesis.size(); j++) {
       std::string word = symbol_table_->Find(hypothesis[j]);
+      // std::string word2=word;
+      // LOG(INFO) << "word result before" << word2;
+      int size = word.size();
+      if(size>=7){
+        if((word[size-1-5]-'_') ==0){
+          word.erase(size-6,6);
+        }
+
+      }
+      // free(size);
+      // LOG(INFO) << "word result " << word;
+      // if (j<=4998){
+      //   std::string word = symbol_table_->Find(hypothesis[j]);
+      // }else{
+      //   std::string word = symbol_table_->Find(hypothesis[j]);
+        
+      // }
+      
       // A detailed explanation of this if-else branch can be found in
       // https://github.com/wenet-e2e/wenet/issues/583#issuecomment-907994058
       if (searcher_->Type() == kWfstBeamSearch) {

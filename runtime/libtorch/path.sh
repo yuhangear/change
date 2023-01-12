@@ -1,0 +1,1 @@
+/datadrive/wenet/wenet-hotwords/examples/release/s0/path.sh

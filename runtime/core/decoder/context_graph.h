@@ -1,17 +1,5 @@
-// Copyright (c) 2021 Mobvoi Inc (Zhendong Peng)
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+// Copyright 2021 Mobvoi Inc. All Rights Reserved.
+// Author: zhendong.peng@mobvoi.com (Zhendong Peng)
 
 #ifndef DECODER_CONTEXT_GRAPH_H_
 #define DECODER_CONTEXT_GRAPH_H_
@@ -23,7 +11,7 @@
 #include "fst/compose.h"
 #include "fst/fst.h"
 #include "fst/vector-fst.h"
-
+#include "decoder/hw_scorer.h"
 namespace wenet {
 
 using StateId = fst::StdArc::StateId;
@@ -44,13 +32,19 @@ class ContextGraph {
 
   int start_tag_id() { return start_tag_id_; }
   int end_tag_id() { return end_tag_id_; }
-
+  bool refreash_cache=true; //weather to refreash cached score_output
+  int if_init=0;
+  void set_if_init_1() { if_init=1; }
+  void set_if_init_0() { if_init=0; }
  private:
+ 
   int start_tag_id_ = -1;
   int end_tag_id_ = -1;
   ContextConfig config_;
   std::shared_ptr<fst::SymbolTable> symbol_table_ = nullptr;
   std::unique_ptr<fst::StdVectorFst> graph_ = nullptr;
+  victor::HWScorer* hwscore_=nullptr;
+  victor::Score_output cache_result_;
   DISALLOW_COPY_AND_ASSIGN(ContextGraph);
 };
 

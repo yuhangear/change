@@ -1,0 +1,90 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 2.46
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 2.46
+		intervals: size = 19
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.42
+				text = "▁UM"
+			intervals [3]:
+				xmin = 0.42
+				xmax = 0.4201
+				text = ""
+			intervals [4]:
+				xmin = 0.4201
+				xmax = 1.02
+				text = "▁YA"
+			intervals [5]:
+				xmin = 1.02
+				xmax = 1.0201
+				text = ""
+			intervals [6]:
+				xmin = 1.0201
+				xmax = 1.2
+				text = "H▁GOT"
+			intervals [7]:
+				xmin = 1.2
+				xmax = 1.2001
+				text = ""
+			intervals [8]:
+				xmin = 1.2001
+				xmax = 1.38
+				text = "▁LA"
+			intervals [9]:
+				xmin = 1.38
+				xmax = 1.3800999999999999
+				text = ""
+			intervals [10]:
+				xmin = 1.3800999999999999
+				xmax = 1.56
+				text = "H▁GOT"
+			intervals [11]:
+				xmin = 1.56
+				xmax = 1.5601
+				text = ""
+			intervals [12]:
+				xmin = 1.5601
+				xmax = 1.68
+				text = "▁LA"
+			intervals [13]:
+				xmin = 1.68
+				xmax = 1.6801
+				text = ""
+			intervals [14]:
+				xmin = 1.6801
+				xmax = 1.92
+				text = "H▁I"
+			intervals [15]:
+				xmin = 1.92
+				xmax = 1.9201
+				text = ""
+			intervals [16]:
+				xmin = 1.9201
+				xmax = 2.04
+				text = "▁MEAN"
+			intervals [17]:
+				xmin = 2.04
+				xmax = 2.0401000000000002
+				text = ""
+			intervals [18]:
+				xmin = 2.0401000000000002
+				xmax = 2.4
+				text = "▁LIKE"
+			intervals [19]:
+				xmin = 2.4
+				xmax = 2.46
+				text = ""

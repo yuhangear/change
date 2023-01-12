@@ -1,0 +1,98 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 3.84
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 3.84
+		intervals: size = 21
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.24
+				text = "▁AND"
+			intervals [3]:
+				xmin = 0.24
+				xmax = 0.24009999999999998
+				text = ""
+			intervals [4]:
+				xmin = 0.24009999999999998
+				xmax = 0.54
+				text = "▁THAT'S"
+			intervals [5]:
+				xmin = 0.54
+				xmax = 0.5401
+				text = ""
+			intervals [6]:
+				xmin = 0.5401
+				xmax = 0.66
+				text = "▁THE"
+			intervals [7]:
+				xmin = 0.66
+				xmax = 0.6601
+				text = ""
+			intervals [8]:
+				xmin = 0.6601
+				xmax = 0.84
+				text = "▁STORY"
+			intervals [9]:
+				xmin = 0.84
+				xmax = 0.8401
+				text = ""
+			intervals [10]:
+				xmin = 0.8401
+				xmax = 1.14
+				text = "▁FROM"
+			intervals [11]:
+				xmin = 1.14
+				xmax = 1.1401
+				text = ""
+			intervals [12]:
+				xmin = 1.1401
+				xmax = 1.32
+				text = "▁WEST"
+			intervals [13]:
+				xmin = 1.32
+				xmax = 1.3201
+				text = ""
+			intervals [14]:
+				xmin = 1.3201
+				xmax = 1.8
+				text = "▁ASIA"
+			intervals [15]:
+				xmin = 1.8
+				xmax = 1.8001
+				text = ""
+			intervals [16]:
+				xmin = 1.8001
+				xmax = 2.88
+				text = "▁TENSIONCTIONS"
+			intervals [17]:
+				xmin = 2.88
+				xmax = 2.8801
+				text = ""
+			intervals [18]:
+				xmin = 2.8801
+				xmax = 3.18
+				text = "▁BETWEEN"
+			intervals [19]:
+				xmin = 3.18
+				xmax = 3.1801000000000004
+				text = ""
+			intervals [20]:
+				xmin = 3.1801000000000004
+				xmax = 3.78
+				text = "▁ISRAEL"
+			intervals [21]:
+				xmin = 3.78
+				xmax = 3.84
+				text = ""

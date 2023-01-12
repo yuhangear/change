@@ -1,0 +1,3 @@
+/datadrive/wenet/wenet-hotwords/temp/wenet/wenet/runtime/libtorch/bpe_model/CMakeFiles/rebuild_cache.dir
+/datadrive/wenet/wenet-hotwords/temp/wenet/wenet/runtime/libtorch/bpe_model/CMakeFiles/edit_cache.dir
+/datadrive/wenet/wenet-hotwords/temp/wenet/wenet/runtime/libtorch/bpe_model/CMakeFiles/test.dir

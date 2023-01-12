@@ -1,0 +1,138 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 4.32
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 4.32
+		intervals: size = 31
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.6
+				text = "▁IT"
+			intervals [3]:
+				xmin = 0.6
+				xmax = 0.6001
+				text = ""
+			intervals [4]:
+				xmin = 0.6001
+				xmax = 0.78
+				text = "'S▁JUST"
+			intervals [5]:
+				xmin = 0.78
+				xmax = 0.7801
+				text = ""
+			intervals [6]:
+				xmin = 0.7801
+				xmax = 1.02
+				text = "▁EVERY"
+			intervals [7]:
+				xmin = 1.02
+				xmax = 1.0201
+				text = ""
+			intervals [8]:
+				xmin = 1.0201
+				xmax = 1.14
+				text = "▁DAY"
+			intervals [9]:
+				xmin = 1.14
+				xmax = 1.1401
+				text = ""
+			intervals [10]:
+				xmin = 1.1401
+				xmax = 1.32
+				text = "▁SC"
+			intervals [11]:
+				xmin = 1.32
+				xmax = 1.3201
+				text = ""
+			intervals [12]:
+				xmin = 1.3201
+				xmax = 1.8
+				text = "OLDING▁ABOUT"
+			intervals [13]:
+				xmin = 1.8
+				xmax = 1.8001
+				text = ""
+			intervals [14]:
+				xmin = 1.8001
+				xmax = 1.98
+				text = "▁LIKE"
+			intervals [15]:
+				xmin = 1.98
+				xmax = 1.9801
+				text = ""
+			intervals [16]:
+				xmin = 1.9801
+				xmax = 2.34
+				text = "▁HOW"
+			intervals [17]:
+				xmin = 2.34
+				xmax = 2.3401
+				text = ""
+			intervals [18]:
+				xmin = 2.3401
+				xmax = 2.58
+				text = "▁BAD"
+			intervals [19]:
+				xmin = 2.58
+				xmax = 2.5801000000000003
+				text = ""
+			intervals [20]:
+				xmin = 2.5801000000000003
+				xmax = 2.82
+				text = "▁MY"
+			intervals [21]:
+				xmin = 2.82
+				xmax = 2.8201
+				text = ""
+			intervals [22]:
+				xmin = 2.8201
+				xmax = 2.94
+				text = "▁PAPER"
+			intervals [23]:
+				xmin = 2.94
+				xmax = 2.9401
+				text = ""
+			intervals [24]:
+				xmin = 2.9401
+				xmax = 3.42
+				text = "WORK▁IS"
+			intervals [25]:
+				xmin = 3.42
+				xmax = 3.4201
+				text = ""
+			intervals [26]:
+				xmin = 3.4201
+				xmax = 3.66
+				text = "▁AND"
+			intervals [27]:
+				xmin = 3.66
+				xmax = 3.6601000000000004
+				text = ""
+			intervals [28]:
+				xmin = 3.6601000000000004
+				xmax = 3.9
+				text = "▁STUFF"
+			intervals [29]:
+				xmin = 3.9
+				xmax = 3.9001
+				text = ""
+			intervals [30]:
+				xmin = 3.9001
+				xmax = 4.26
+				text = "▁LAH"
+			intervals [31]:
+				xmin = 4.26
+				xmax = 4.32
+				text = ""

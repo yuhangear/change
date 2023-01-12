@@ -1,0 +1,82 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 4.4399999999999995
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 4.4399999999999995
+		intervals: size = 17
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.9
+				text = "▁TAAI"
+			intervals [3]:
+				xmin = 0.9
+				xmax = 0.9001
+				text = ""
+			intervals [4]:
+				xmin = 0.9001
+				xmax = 1.2
+				text = "▁SENG"
+			intervals [5]:
+				xmin = 1.2
+				xmax = 1.2001
+				text = ""
+			intervals [6]:
+				xmin = 1.2001
+				xmax = 1.32
+				text = "▁DRIVE"
+			intervals [7]:
+				xmin = 1.32
+				xmax = 1.3201
+				text = ""
+			intervals [8]:
+				xmin = 1.3201
+				xmax = 2.34
+				text = "▁GEYLANG"
+			intervals [9]:
+				xmin = 2.34
+				xmax = 2.3401
+				text = ""
+			intervals [10]:
+				xmin = 2.3401
+				xmax = 2.52
+				text = "▁SQUARE"
+			intervals [11]:
+				xmin = 2.52
+				xmax = 2.5201000000000002
+				text = ""
+			intervals [12]:
+				xmin = 2.5201000000000002
+				xmax = 3.0
+				text = "▁AND"
+			intervals [13]:
+				xmin = 3.0
+				xmax = 3.0001
+				text = ""
+			intervals [14]:
+				xmin = 3.0001
+				xmax = 3.78
+				text = "▁AINANI"
+			intervals [15]:
+				xmin = 3.78
+				xmax = 3.7801
+				text = ""
+			intervals [16]:
+				xmin = 3.7801
+				xmax = 4.38
+				text = "▁STREET"
+			intervals [17]:
+				xmin = 4.38
+				xmax = 4.4399999999999995
+				text = ""

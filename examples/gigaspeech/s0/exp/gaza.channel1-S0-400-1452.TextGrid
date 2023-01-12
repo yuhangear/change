@@ -1,0 +1,274 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 10.5
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 10.5
+		intervals: size = 65
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.24
+				text = "▁AND"
+			intervals [3]:
+				xmin = 0.24
+				xmax = 0.24009999999999998
+				text = ""
+			intervals [4]:
+				xmin = 0.24009999999999998
+				xmax = 0.42
+				text = "▁AS"
+			intervals [5]:
+				xmin = 0.42
+				xmax = 0.4201
+				text = ""
+			intervals [6]:
+				xmin = 0.4201
+				xmax = 0.66
+				text = "▁WE"
+			intervals [7]:
+				xmin = 0.66
+				xmax = 0.6601
+				text = ""
+			intervals [8]:
+				xmin = 0.6601
+				xmax = 1.14
+				text = "▁FIGHT"
+			intervals [9]:
+				xmin = 1.14
+				xmax = 1.1401
+				text = ""
+			intervals [10]:
+				xmin = 1.1401
+				xmax = 1.38
+				text = "▁THE"
+			intervals [11]:
+				xmin = 1.38
+				xmax = 1.3800999999999999
+				text = ""
+			intervals [12]:
+				xmin = 1.3800999999999999
+				xmax = 1.68
+				text = "▁WHAN"
+			intervals [13]:
+				xmin = 1.68
+				xmax = 1.6801
+				text = ""
+			intervals [14]:
+				xmin = 1.6801
+				xmax = 1.86
+				text = "▁VIRUS"
+			intervals [15]:
+				xmin = 1.86
+				xmax = 1.8601
+				text = ""
+			intervals [16]:
+				xmin = 1.8601
+				xmax = 2.22
+				text = "▁THE"
+			intervals [17]:
+				xmin = 2.22
+				xmax = 2.2201000000000004
+				text = ""
+			intervals [18]:
+				xmin = 2.2201000000000004
+				xmax = 2.34
+				text = "▁KEY"
+			intervals [19]:
+				xmin = 2.34
+				xmax = 2.3401
+				text = ""
+			intervals [20]:
+				xmin = 2.3401
+				xmax = 2.58
+				text = "▁WE"
+			intervals [21]:
+				xmin = 2.58
+				xmax = 2.5801000000000003
+				text = ""
+			intervals [22]:
+				xmin = 2.5801000000000003
+				xmax = 2.82
+				text = "▁SAY"
+			intervals [23]:
+				xmin = 2.82
+				xmax = 2.8201
+				text = ""
+			intervals [24]:
+				xmin = 2.8201
+				xmax = 3.0
+				text = "▁IS"
+			intervals [25]:
+				xmin = 3.0
+				xmax = 3.0001
+				text = ""
+			intervals [26]:
+				xmin = 3.0001
+				xmax = 3.12
+				text = "▁TO"
+			intervals [27]:
+				xmin = 3.12
+				xmax = 3.1201000000000003
+				text = ""
+			intervals [28]:
+				xmin = 3.1201000000000003
+				xmax = 3.24
+				text = "▁NOT"
+			intervals [29]:
+				xmin = 3.24
+				xmax = 3.2401000000000004
+				text = ""
+			intervals [30]:
+				xmin = 3.2401000000000004
+				xmax = 3.48
+				text = "▁LOSE"
+			intervals [31]:
+				xmin = 3.48
+				xmax = 3.4801
+				text = ""
+			intervals [32]:
+				xmin = 3.4801
+				xmax = 3.72
+				text = "▁HOPE"
+			intervals [33]:
+				xmin = 3.72
+				xmax = 3.7201000000000004
+				text = ""
+			intervals [34]:
+				xmin = 3.7201000000000004
+				xmax = 3.9
+				text = "▁AND"
+			intervals [35]:
+				xmin = 3.9
+				xmax = 3.9001
+				text = ""
+			intervals [36]:
+				xmin = 3.9001
+				xmax = 4.2
+				text = "▁THAT'S"
+			intervals [37]:
+				xmin = 4.2
+				xmax = 4.2001
+				text = ""
+			intervals [38]:
+				xmin = 4.2001
+				xmax = 4.32
+				text = "▁TRUE"
+			intervals [39]:
+				xmin = 4.32
+				xmax = 4.3201
+				text = ""
+			intervals [40]:
+				xmin = 4.3201
+				xmax = 4.56
+				text = "▁FOR"
+			intervals [41]:
+				xmin = 4.56
+				xmax = 4.560099999999999
+				text = ""
+			intervals [42]:
+				xmin = 4.560099999999999
+				xmax = 4.74
+				text = "▁ANY"
+			intervals [43]:
+				xmin = 4.74
+				xmax = 4.7401
+				text = ""
+			intervals [44]:
+				xmin = 4.7401
+				xmax = 5.16
+				text = "▁CRISIS"
+			intervals [45]:
+				xmin = 5.16
+				xmax = 5.1601
+				text = ""
+			intervals [46]:
+				xmin = 5.1601
+				xmax = 5.88
+				text = "▁HEALTHCARE"
+			intervals [47]:
+				xmin = 5.88
+				xmax = 5.8801
+				text = ""
+			intervals [48]:
+				xmin = 5.8801
+				xmax = 6.42
+				text = "▁CRISIS"
+			intervals [49]:
+				xmin = 6.42
+				xmax = 6.4201
+				text = ""
+			intervals [50]:
+				xmin = 6.4201
+				xmax = 7.32
+				text = "▁HUMANITARIAN"
+			intervals [51]:
+				xmin = 7.32
+				xmax = 7.3201
+				text = ""
+			intervals [52]:
+				xmin = 7.3201
+				xmax = 7.8
+				text = "▁HISTORICAL"
+			intervals [53]:
+				xmin = 7.8
+				xmax = 7.8001
+				text = ""
+			intervals [54]:
+				xmin = 7.8001
+				xmax = 8.52
+				text = "▁BECAUSE"
+			intervals [55]:
+				xmin = 8.52
+				xmax = 8.5201
+				text = ""
+			intervals [56]:
+				xmin = 8.5201
+				xmax = 8.88
+				text = "▁EVEN"
+			intervals [57]:
+				xmin = 8.88
+				xmax = 8.8801
+				text = ""
+			intervals [58]:
+				xmin = 8.8801
+				xmax = 9.18
+				text = "▁THE"
+			intervals [59]:
+				xmin = 9.18
+				xmax = 9.1801
+				text = ""
+			intervals [60]:
+				xmin = 9.1801
+				xmax = 9.66
+				text = "▁DARKEST"
+			intervals [61]:
+				xmin = 9.66
+				xmax = 9.6601
+				text = ""
+			intervals [62]:
+				xmin = 9.6601
+				xmax = 9.9
+				text = "▁OF"
+			intervals [63]:
+				xmin = 9.9
+				xmax = 9.9001
+				text = ""
+			intervals [64]:
+				xmin = 9.9001
+				xmax = 10.44
+				text = "▁TUNNELS"
+			intervals [65]:
+				xmin = 10.44
+				xmax = 10.5
+				text = ""

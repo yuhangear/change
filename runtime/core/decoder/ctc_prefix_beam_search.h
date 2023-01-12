@@ -1,17 +1,5 @@
-// Copyright (c) 2020 Mobvoi Inc (Binbin Zhang)
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+// Copyright 2020 Mobvoi Inc. All Rights Reserved.
+// Author: binbinzhang@mobvoi.com (Binbin Zhang)
 
 #ifndef DECODER_CTC_PREFIX_BEAM_SEARCH_H_
 #define DECODER_CTC_PREFIX_BEAM_SEARCH_H_
@@ -73,6 +61,7 @@ struct PrefixScore {
     context_state =
         context_graph->GetNextState(prefix_score.context_state, word_id, &score,
                                     &is_start_boundary, &is_end_boundary);
+
     context_score += score;
     if (is_start_boundary) start_boundaries.emplace_back(prefix_len);
     if (is_end_boundary) end_boundaries.emplace_back(prefix_len);

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/test.dir/test.cpp.o  -o test  -Wl,-rpath,/datadrive/conda/lib /datadrive/conda/lib/libpython3.9.so 

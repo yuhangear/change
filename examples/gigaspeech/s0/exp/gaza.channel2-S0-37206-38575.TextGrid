@@ -1,0 +1,394 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 13.680000000000001
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 13.680000000000001
+		intervals: size = 95
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.36
+				text = "▁THEY'VE"
+			intervals [3]:
+				xmin = 0.36
+				xmax = 0.3601
+				text = ""
+			intervals [4]:
+				xmin = 0.3601
+				xmax = 0.42
+				text = "▁BEEN"
+			intervals [5]:
+				xmin = 0.42
+				xmax = 0.4201
+				text = ""
+			intervals [6]:
+				xmin = 0.4201
+				xmax = 0.6
+				text = "▁PRO"
+			intervals [7]:
+				xmin = 0.6
+				xmax = 0.6001
+				text = ""
+			intervals [8]:
+				xmin = 0.6001
+				xmax = 0.84
+				text = "▁ISRAEL"
+			intervals [9]:
+				xmin = 0.84
+				xmax = 0.8401
+				text = ""
+			intervals [10]:
+				xmin = 0.8401
+				xmax = 1.2
+				text = "▁AND"
+			intervals [11]:
+				xmin = 1.2
+				xmax = 1.2001
+				text = ""
+			intervals [12]:
+				xmin = 1.2001
+				xmax = 1.32
+				text = "▁PRO"
+			intervals [13]:
+				xmin = 1.32
+				xmax = 1.3201
+				text = ""
+			intervals [14]:
+				xmin = 1.3201
+				xmax = 1.92
+				text = "▁PALESTINE"
+			intervals [15]:
+				xmin = 1.92
+				xmax = 1.9201
+				text = ""
+			intervals [16]:
+				xmin = 1.9201
+				xmax = 2.4
+				text = "▁RALLIES"
+			intervals [17]:
+				xmin = 2.4
+				xmax = 2.4001
+				text = ""
+			intervals [18]:
+				xmin = 2.4001
+				xmax = 2.52
+				text = "▁IN"
+			intervals [19]:
+				xmin = 2.52
+				xmax = 2.5201000000000002
+				text = ""
+			intervals [20]:
+				xmin = 2.5201000000000002
+				xmax = 2.7
+				text = "▁COUNTRIES"
+			intervals [21]:
+				xmin = 2.7
+				xmax = 2.7001000000000004
+				text = ""
+			intervals [22]:
+				xmin = 2.7001000000000004
+				xmax = 3.18
+				text = "▁ACROSS"
+			intervals [23]:
+				xmin = 3.18
+				xmax = 3.1801000000000004
+				text = ""
+			intervals [24]:
+				xmin = 3.1801000000000004
+				xmax = 3.48
+				text = "▁THE"
+			intervals [25]:
+				xmin = 3.48
+				xmax = 3.4801
+				text = ""
+			intervals [26]:
+				xmin = 3.4801
+				xmax = 3.6
+				text = "▁WORLD"
+			intervals [27]:
+				xmin = 3.6
+				xmax = 3.6001000000000003
+				text = ""
+			intervals [28]:
+				xmin = 3.6001000000000003
+				xmax = 3.84
+				text = "▁ONE"
+			intervals [29]:
+				xmin = 3.84
+				xmax = 3.8401
+				text = ""
+			intervals [30]:
+				xmin = 3.8401
+				xmax = 4.02
+				text = "▁SUCH"
+			intervals [31]:
+				xmin = 4.02
+				xmax = 4.020099999999999
+				text = ""
+			intervals [32]:
+				xmin = 4.020099999999999
+				xmax = 4.44
+				text = "▁RALLY"
+			intervals [33]:
+				xmin = 4.44
+				xmax = 4.4401
+				text = ""
+			intervals [34]:
+				xmin = 4.4401
+				xmax = 4.92
+				text = "▁DONE"
+			intervals [35]:
+				xmin = 4.92
+				xmax = 4.9201
+				text = ""
+			intervals [36]:
+				xmin = 4.9201
+				xmax = 5.4
+				text = "▁DEADLY"
+			intervals [37]:
+				xmin = 5.4
+				xmax = 5.4001
+				text = ""
+			intervals [38]:
+				xmin = 5.4001
+				xmax = 5.7
+				text = "▁TODAY"
+			intervals [39]:
+				xmin = 5.7
+				xmax = 5.7001
+				text = ""
+			intervals [40]:
+				xmin = 5.7001
+				xmax = 5.82
+				text = "▁IN"
+			intervals [41]:
+				xmin = 5.82
+				xmax = 5.8201
+				text = ""
+			intervals [42]:
+				xmin = 5.8201
+				xmax = 6.0
+				text = "▁PAKISTAN"
+			intervals [43]:
+				xmin = 6.0
+				xmax = 6.0001
+				text = ""
+			intervals [44]:
+				xmin = 6.0001
+				xmax = 6.54
+				text = "▁SIX"
+			intervals [45]:
+				xmin = 6.54
+				xmax = 6.5401
+				text = ""
+			intervals [46]:
+				xmin = 6.5401
+				xmax = 6.78
+				text = "▁PEOPLE"
+			intervals [47]:
+				xmin = 6.78
+				xmax = 6.7801
+				text = ""
+			intervals [48]:
+				xmin = 6.7801
+				xmax = 7.02
+				text = "▁WERE"
+			intervals [49]:
+				xmin = 7.02
+				xmax = 7.020099999999999
+				text = ""
+			intervals [50]:
+				xmin = 7.020099999999999
+				xmax = 7.2
+				text = "▁KILLED"
+			intervals [51]:
+				xmin = 7.2
+				xmax = 7.2001
+				text = ""
+			intervals [52]:
+				xmin = 7.2001
+				xmax = 7.44
+				text = "▁IN"
+			intervals [53]:
+				xmin = 7.44
+				xmax = 7.4401
+				text = ""
+			intervals [54]:
+				xmin = 7.4401
+				xmax = 7.56
+				text = "▁AN"
+			intervals [55]:
+				xmin = 7.56
+				xmax = 7.560099999999999
+				text = ""
+			intervals [56]:
+				xmin = 7.560099999999999
+				xmax = 7.98
+				text = "▁EXPLOSION"
+			intervals [57]:
+				xmin = 7.98
+				xmax = 7.9801
+				text = ""
+			intervals [58]:
+				xmin = 7.9801
+				xmax = 8.82
+				text = "▁REPORT"
+			intervals [59]:
+				xmin = 8.82
+				xmax = 8.8201
+				text = ""
+			intervals [60]:
+				xmin = 8.8201
+				xmax = 9.06
+				text = "▁SAID"
+			intervals [61]:
+				xmin = 9.06
+				xmax = 9.0601
+				text = ""
+			intervals [62]:
+				xmin = 9.0601
+				xmax = 9.18
+				text = "▁THE"
+			intervals [63]:
+				xmin = 9.18
+				xmax = 9.1801
+				text = ""
+			intervals [64]:
+				xmin = 9.1801
+				xmax = 9.36
+				text = "▁TARGET"
+			intervals [65]:
+				xmin = 9.36
+				xmax = 9.3601
+				text = ""
+			intervals [66]:
+				xmin = 9.3601
+				xmax = 9.66
+				text = "▁WAS"
+			intervals [67]:
+				xmin = 9.66
+				xmax = 9.6601
+				text = ""
+			intervals [68]:
+				xmin = 9.6601
+				xmax = 9.78
+				text = "▁A"
+			intervals [69]:
+				xmin = 9.78
+				xmax = 9.7801
+				text = ""
+			intervals [70]:
+				xmin = 9.7801
+				xmax = 9.96
+				text = "▁LOCAL"
+			intervals [71]:
+				xmin = 9.96
+				xmax = 9.9601
+				text = ""
+			intervals [72]:
+				xmin = 9.9601
+				xmax = 10.26
+				text = "▁LEADER"
+			intervals [73]:
+				xmin = 10.26
+				xmax = 10.2601
+				text = ""
+			intervals [74]:
+				xmin = 10.2601
+				xmax = 10.74
+				text = "▁WHO"
+			intervals [75]:
+				xmin = 10.74
+				xmax = 10.7401
+				text = ""
+			intervals [76]:
+				xmin = 10.7401
+				xmax = 10.92
+				text = "▁WAS"
+			intervals [77]:
+				xmin = 10.92
+				xmax = 10.9201
+				text = ""
+			intervals [78]:
+				xmin = 10.9201
+				xmax = 11.16
+				text = "▁ON"
+			intervals [79]:
+				xmin = 11.16
+				xmax = 11.1601
+				text = ""
+			intervals [80]:
+				xmin = 11.1601
+				xmax = 11.4
+				text = "▁HIS"
+			intervals [81]:
+				xmin = 11.4
+				xmax = 11.4001
+				text = ""
+			intervals [82]:
+				xmin = 11.4001
+				xmax = 11.52
+				text = "▁WAY"
+			intervals [83]:
+				xmin = 11.52
+				xmax = 11.5201
+				text = ""
+			intervals [84]:
+				xmin = 11.5201
+				xmax = 11.76
+				text = "▁TO"
+			intervals [85]:
+				xmin = 11.76
+				xmax = 11.7601
+				text = ""
+			intervals [86]:
+				xmin = 11.7601
+				xmax = 12.0
+				text = "▁ATTEND"
+			intervals [87]:
+				xmin = 12.0
+				xmax = 12.0001
+				text = ""
+			intervals [88]:
+				xmin = 12.0001
+				xmax = 12.3
+				text = "▁A"
+			intervals [89]:
+				xmin = 12.3
+				xmax = 12.3001
+				text = ""
+			intervals [90]:
+				xmin = 12.3001
+				xmax = 12.54
+				text = "▁PRO"
+			intervals [91]:
+				xmin = 12.54
+				xmax = 12.540099999999999
+				text = ""
+			intervals [92]:
+				xmin = 12.540099999999999
+				xmax = 13.2
+				text = "▁PALESTINE"
+			intervals [93]:
+				xmin = 13.2
+				xmax = 13.200099999999999
+				text = ""
+			intervals [94]:
+				xmin = 13.200099999999999
+				xmax = 13.62
+				text = "▁RALLY"
+			intervals [95]:
+				xmin = 13.62
+				xmax = 13.680000000000001
+				text = ""

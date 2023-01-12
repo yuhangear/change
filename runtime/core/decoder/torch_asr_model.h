@@ -38,7 +38,7 @@ class TorchAsrModel : public AsrModel {
   using TorchModule = torch::jit::script::Module;
   TorchAsrModel() = default;
   TorchAsrModel(const TorchAsrModel& other);
-  void Read(const std::string& model_path);
+  void Read(const std::string& model_path, int sos_id=-1);
   std::shared_ptr<TorchModule> torch_model() const { return model_; }
   void Reset() override;
   void AttentionRescoring(const std::vector<std::vector<int>>& hyps,

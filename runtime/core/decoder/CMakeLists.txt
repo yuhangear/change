@@ -5,7 +5,10 @@ set(decoder_srcs
   ctc_prefix_beam_search.cc
   ctc_wfst_beam_search.cc
   ctc_endpoint.cc
+  hw_scorer.cc
+
 )
+# set(CMAKE_CXX_STANDARD 17)
 
 if(NOT TORCH AND NOT ONNX)
   message(FATAL_ERROR "Please build with TORCH or ONNX!!!")

@@ -91,7 +91,9 @@ void WebSocketClient::SendStartSignal() {
   // TODO(Binbin Zhang): Add sample rate and other setting support
   json::value start_tag = {{"signal", "start"},
                            {"nbest", nbest_},
-                           {"continuous_decoding", continuous_decoding_}};
+                           {"continuous_decoding", continuous_decoding_},
+                           {"hot_list",hot_list},
+                           {"sample_rate",sample_rate}};
   std::string start_message = json::serialize(start_tag);
   this->SendTextData(start_message);
 }

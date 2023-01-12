@@ -1,0 +1,163 @@
+I1028 07:19:42.555052 4120358 params.h:182] Reading torch model libtorch/model/release_malay-eng-model_500imda_200King_31mix_splice100/final.zip
+I1028 07:19:42.556203 4120358 torch_asr_model.cc:36] Num intra-op threads: 1
+I1028 07:19:42.556231 4120358 torch_asr_model.cc:37] Num inter-op threads: 1
+I1028 07:19:43.169134 4120358 torch_asr_model.cc:80] Torch Model Info:
+I1028 07:19:43.169175 4120358 torch_asr_model.cc:81] 	subsampling_rate 6
+I1028 07:19:43.169180 4120358 torch_asr_model.cc:82] 	right context 10
+I1028 07:19:43.169184 4120358 torch_asr_model.cc:83] 	sos 8004
+I1028 07:19:43.169189 4120358 torch_asr_model.cc:84] 	eos 8004
+I1028 07:19:43.169193 4120358 torch_asr_model.cc:85] 	is bidirectional decoder 1
+I1028 07:19:43.169209 4120358 params.h:193] Reading unit table libtorch/model/release_malay-eng-model_500imda_200King_31mix_splice100/words.txt2
+I1028 07:19:43.179852 4120358 params.h:222] Reading context libtorch/hot_word_dir/
+I1028 07:19:43.189924 4120358 context_graph.cc:69] Contexts count size: 1217
+I1028 07:19:46.137913 4120358 context_graph.cc:69] Contexts count size: 1181
+I1028 07:19:48.934695 4120358 context_graph.cc:69] Contexts count size: 1181
+I1028 07:19:51.735960 4120358 context_graph.cc:69] Contexts count size: 1181
+I1028 07:19:54.531230 4120358 websocket_server_main.cc:31] Listening at port 20089
+I1028 07:19:54.557507 4120358 websocket_server.cc:436] bpe_pathsys.path.append('/datadrive/temp/temp/wenet1/runtime/libtorch/bpe_model')
+I1028 07:20:47.002292 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:20:47.002346 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:20:47.002354 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:20:47.002362 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:20:47.003087 4120561 websocket_server.cc:351] {"signal":"start","nbest":1,"continuous_decoding":true,"hot_list":1,"sample_rate":16000}
+I1028 07:20:47.003157 4120561 websocket_server.cc:101] Received speech start signal, start reading speech
+I1028 07:20:47.003914 4120561 websocket_server.cc:113] 热词 if_init 1
+I1028 07:20:47.003926 4120561 websocket_server.cc:115] 使用第1个列表解码 
+I1028 07:20:47.005645 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:47.506081 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:48.006610 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:48.507135 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:49.007653 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:49.508083 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:50.009127 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:50.509603 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:50.511497 4120563 asr_decoder.cc:104] Required 197 get 197
+I1028 07:20:51.010097 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:51.079294 4120563 asr_decoder.cc:212] Partial CTC result malam one
+I1028 07:20:51.079418 4120563 websocket_server.cc:138] Partial result: [{"sentence":"malam one"}]
+I1028 07:20:51.510586 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:52.011020 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:52.511471 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:53.011938 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:53.512411 4120561 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:54.012943 4120561 websocket_server.cc:165] Received 2240 samples
+I1028 07:20:54.513170 4120561 websocket_server.cc:351] {"signal":"end"}
+I1028 07:20:54.513242 4120561 websocket_server.cc:130] Received speech end signal
+I1028 07:20:54.513460 4120563 asr_decoder.cc:104] Required 192 get 165
+I1028 07:20:54.513753 4120561 websocket_server.cc:368] Read all pcm data, wait for decoding thread
+I1028 07:20:57.192035 4120563 asr_decoder.cc:212] Partial CTC result malam charge orang orangg
+I1028 07:20:57.194164 4120563 asr_decoder.cc:212] Partial CTC result malam charge orang orangg
+I1028 07:20:57.425851 4120563 asr_decoder.cc:84] Rescoring cost latency: 233ms.
+I1028 07:20:57.425971 4120563 websocket_server.cc:146] Final result: [{"sentence":"barang charge orang orang daging","word_pieces":[{"word":"▁BARANG_malay","start":440,"end":540},{"word":"▁CHARGE_malay","start":1880,"end":1980},{"word":"▁ORANG_malay","start":2180,"end":2280},{"word":"▁ORANG_malay","start":2600,"end":2700},{"word":"▁DAGING_malay","start":3260,"end":3360}]}]
+I1028 07:20:58.930260 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:20:58.930310 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:20:58.930322 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:20:58.930330 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:20:58.930938 4120737 websocket_server.cc:351] {"signal":"start","nbest":1,"continuous_decoding":true,"hot_list":1,"sample_rate":16000}
+I1028 07:20:58.931005 4120737 websocket_server.cc:101] Received speech start signal, start reading speech
+I1028 07:20:58.931921 4120737 websocket_server.cc:113] 热词 if_init 1
+I1028 07:20:58.931951 4120737 websocket_server.cc:115] 使用第1个列表解码 
+I1028 07:20:58.933240 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:59.433790 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:20:59.934334 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:00.434870 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:00.935428 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:01.435926 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:01.936336 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:02.436853 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:02.439024 4120739 asr_decoder.cc:104] Required 197 get 197
+I1028 07:21:02.647563 4120739 asr_decoder.cc:212] Partial CTC result malam one
+I1028 07:21:02.647668 4120739 websocket_server.cc:138] Partial result: [{"sentence":"malam one"}]
+I1028 07:21:02.937424 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:03.437964 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:03.938450 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:04.439513 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:04.939955 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:05.440475 4120737 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:05.941020 4120737 websocket_server.cc:165] Received 2240 samples
+I1028 07:21:06.441399 4120737 websocket_server.cc:351] {"signal":"end"}
+I1028 07:21:06.441496 4120737 websocket_server.cc:130] Received speech end signal
+I1028 07:21:06.441534 4120737 websocket_server.cc:368] Read all pcm data, wait for decoding thread
+I1028 07:21:06.441694 4120739 asr_decoder.cc:104] Required 192 get 165
+I1028 07:21:09.514484 4120739 asr_decoder.cc:212] Partial CTC result malam charge orang orangg
+I1028 07:21:09.516867 4120739 asr_decoder.cc:212] Partial CTC result malam charge orang orangg
+I1028 07:21:10.498359 4120739 asr_decoder.cc:84] Rescoring cost latency: 983ms.
+I1028 07:21:10.498513 4120739 websocket_server.cc:146] Final result: [{"sentence":"barang charge orang orang daging","word_pieces":[{"word":"▁BARANG_malay","start":440,"end":540},{"word":"▁CHARGE_malay","start":1880,"end":1980},{"word":"▁ORANG_malay","start":2180,"end":2280},{"word":"▁ORANG_malay","start":2600,"end":2700},{"word":"▁DAGING_malay","start":3260,"end":3360}]}]
+I1028 07:21:11.955338 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:21:11.955376 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:21:11.955386 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:21:11.955394 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:21:11.955412 4120358 websocket_server.cc:487] bpe_cut.cut('libtorch/hot_word_dir_old/hot5','libtorch/hot_word_dir/hot5')
+I1028 07:21:11.977339 4120358 websocket_server.cc:495] context list is changed reloading fromlibtorch/hot_word_dir/hot5
+I1028 07:21:11.977802 4120358 symbol-table.cc:112] SymbolTable::AddSymbol: symbol = <context> already in symbol_map_ with key = 8005 but supplied new key = 8007 (ignoring new key)
+I1028 07:21:11.977830 4120358 symbol-table.cc:112] SymbolTable::AddSymbol: symbol = </context> already in symbol_map_ with key = 8006 but supplied new key = 8007 (ignoring new key)
+I1028 07:21:11.977846 4120358 context_graph.cc:69] Contexts count size: 1181
+I1028 07:21:14.815696 4120930 websocket_server.cc:351] {"signal":"start","nbest":1,"continuous_decoding":true,"hot_list":1,"sample_rate":16000}
+I1028 07:21:14.815788 4120930 websocket_server.cc:101] Received speech start signal, start reading speech
+I1028 07:21:14.816603 4120930 websocket_server.cc:113] 热词 if_init 1
+I1028 07:21:14.816618 4120930 websocket_server.cc:115] 使用第1个列表解码 
+I1028 07:21:14.818424 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:15.318971 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:15.819566 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:16.320255 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:16.821206 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:17.321710 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:17.822239 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:18.322736 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:18.324808 4120932 asr_decoder.cc:104] Required 197 get 197
+I1028 07:21:18.515507 4120932 asr_decoder.cc:212] Partial CTC result malam one
+I1028 07:21:18.515609 4120932 websocket_server.cc:138] Partial result: [{"sentence":"malam one"}]
+I1028 07:21:18.823226 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:19.323655 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:19.824239 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:20.324736 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:20.825248 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:21.325773 4120930 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:21.826153 4120930 websocket_server.cc:165] Received 2240 samples
+I1028 07:21:22.326586 4120930 websocket_server.cc:351] {"signal":"end"}
+I1028 07:21:22.326665 4120930 websocket_server.cc:130] Received speech end signal
+I1028 07:21:22.326690 4120930 websocket_server.cc:368] Read all pcm data, wait for decoding thread
+I1028 07:21:22.326838 4120932 asr_decoder.cc:104] Required 192 get 165
+I1028 07:21:22.519680 4120932 asr_decoder.cc:212] Partial CTC result malam charge orang orangg
+I1028 07:21:22.521847 4120932 asr_decoder.cc:212] Partial CTC result malam charge orang orangg
+I1028 07:21:22.566794 4120932 asr_decoder.cc:84] Rescoring cost latency: 47ms.
+I1028 07:21:22.566926 4120932 websocket_server.cc:146] Final result: [{"sentence":"barang charge orang orang daging","word_pieces":[{"word":"▁BARANG_malay","start":440,"end":540},{"word":"▁CHARGE_malay","start":1880,"end":1980},{"word":"▁ORANG_malay","start":2180,"end":2280},{"word":"▁ORANG_malay","start":2600,"end":2700},{"word":"▁DAGING_malay","start":3260,"end":3360}]}]
+I1028 07:21:29.106010 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:21:29.106055 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:21:29.106070 4120358 websocket_server.cc:487] bpe_cut.cut('libtorch/hot_word_dir_old/hot3','libtorch/hot_word_dir/hot3')
+I1028 07:21:29.128705 4120358 websocket_server.cc:495] context list is changed reloading fromlibtorch/hot_word_dir/hot3
+I1028 07:21:29.129216 4120358 symbol-table.cc:112] SymbolTable::AddSymbol: symbol = <context> already in symbol_map_ with key = 8005 but supplied new key = 8007 (ignoring new key)
+I1028 07:21:29.129236 4120358 symbol-table.cc:112] SymbolTable::AddSymbol: symbol = </context> already in symbol_map_ with key = 8006 but supplied new key = 8007 (ignoring new key)
+I1028 07:21:29.129814 4120358 context_graph.cc:69] Contexts count size: 1166
+I1028 07:21:31.991925 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:21:31.991963 4120358 websocket_server.cc:505] context list is not changed
+I1028 07:21:31.992803 4121127 websocket_server.cc:351] {"signal":"start","nbest":1,"continuous_decoding":true,"hot_list":1,"sample_rate":16000}
+I1028 07:21:31.992885 4121127 websocket_server.cc:101] Received speech start signal, start reading speech
+I1028 07:21:31.993705 4121127 websocket_server.cc:113] 热词 if_init 1
+I1028 07:21:31.993716 4121127 websocket_server.cc:115] 使用第1个列表解码 
+I1028 07:21:31.995566 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:32.496028 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:32.996558 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:33.497085 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:33.997601 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:34.498109 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:34.998598 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:35.499114 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:35.501144 4121129 asr_decoder.cc:104] Required 197 get 197
+I1028 07:21:35.714358 4121129 asr_decoder.cc:212] Partial CTC result malam one
+I1028 07:21:35.714514 4121129 websocket_server.cc:138] Partial result: [{"sentence":"malam one"}]
+I1028 07:21:35.999641 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:36.500123 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:37.001051 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:37.501601 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:38.002043 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:38.502545 4121127 websocket_server.cc:165] Received 4000 samples
+I1028 07:21:39.002974 4121127 websocket_server.cc:165] Received 2240 samples
+I1028 07:21:39.503516 4121127 websocket_server.cc:351] {"signal":"end"}
+I1028 07:21:39.503655 4121127 websocket_server.cc:130] Received speech end signal
+I1028 07:21:39.503705 4121127 websocket_server.cc:368] Read all pcm data, wait for decoding thread
+I1028 07:21:39.503932 4121129 asr_decoder.cc:104] Required 192 get 165
+I1028 07:21:39.687587 4121129 asr_decoder.cc:212] Partial CTC result malam charge orang orangg
+I1028 07:21:39.689815 4121129 asr_decoder.cc:212] Partial CTC result malam charge orang orangg
+I1028 07:21:39.734336 4121129 asr_decoder.cc:84] Rescoring cost latency: 46ms.
+I1028 07:21:39.734448 4121129 websocket_server.cc:146] Final result: [{"sentence":"barang charge orang orang daging","word_pieces":[{"word":"▁BARANG_malay","start":440,"end":540},{"word":"▁CHARGE_malay","start":1880,"end":1980},{"word":"▁ORANG_malay","start":2180,"end":2280},{"word":"▁ORANG_malay","start":2600,"end":2700},{"word":"▁DAGING_malay","start":3260,"end":3360}]}]

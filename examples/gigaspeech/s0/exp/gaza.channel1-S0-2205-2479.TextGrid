@@ -1,0 +1,66 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 2.7
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 2.7
+		intervals: size = 13
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.24
+				text = "▁AND"
+			intervals [3]:
+				xmin = 0.24
+				xmax = 0.24009999999999998
+				text = ""
+			intervals [4]:
+				xmin = 0.24009999999999998
+				xmax = 0.66
+				text = "▁HAMMA"
+			intervals [5]:
+				xmin = 0.66
+				xmax = 0.6601
+				text = ""
+			intervals [6]:
+				xmin = 0.6601
+				xmax = 1.56
+				text = "▁ESCALATED"
+			intervals [7]:
+				xmin = 1.56
+				xmax = 1.5601
+				text = ""
+			intervals [8]:
+				xmin = 1.5601
+				xmax = 1.8
+				text = "▁TWO"
+			intervals [9]:
+				xmin = 1.8
+				xmax = 1.8001
+				text = ""
+			intervals [10]:
+				xmin = 1.8001
+				xmax = 2.46
+				text = "▁FRIDAYS"
+			intervals [11]:
+				xmin = 2.46
+				xmax = 2.4601
+				text = ""
+			intervals [12]:
+				xmin = 2.4601
+				xmax = 2.64
+				text = "▁AGO"
+			intervals [13]:
+				xmin = 2.64
+				xmax = 2.7
+				text = ""

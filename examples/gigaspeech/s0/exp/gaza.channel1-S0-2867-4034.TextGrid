@@ -1,0 +1,322 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 11.64
+tiers? <exists>
+size = 1
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "line"
+		xmin = 0.0
+		xmax = 11.64
+		intervals: size = 77
+			intervals [1]:
+				xmin = 0.0
+				xmax = 0.0001
+				text = ""
+			intervals [2]:
+				xmin = 0.0001
+				xmax = 0.36
+				text = "▁BEFORE"
+			intervals [3]:
+				xmin = 0.36
+				xmax = 0.3601
+				text = ""
+			intervals [4]:
+				xmin = 0.3601
+				xmax = 0.6
+				text = "▁ONE"
+			intervals [5]:
+				xmin = 0.6
+				xmax = 0.6001
+				text = ""
+			intervals [6]:
+				xmin = 0.6001
+				xmax = 0.78
+				text = "▁COULD"
+			intervals [7]:
+				xmin = 0.78
+				xmax = 0.7801
+				text = ""
+			intervals [8]:
+				xmin = 0.7801
+				xmax = 0.96
+				text = "▁TAKE"
+			intervals [9]:
+				xmin = 0.96
+				xmax = 0.9601
+				text = ""
+			intervals [10]:
+				xmin = 0.9601
+				xmax = 1.26
+				text = "▁STOCK"
+			intervals [11]:
+				xmin = 1.26
+				xmax = 1.2601
+				text = ""
+			intervals [12]:
+				xmin = 1.2601
+				xmax = 1.68
+				text = "▁A"
+			intervals [13]:
+				xmin = 1.68
+				xmax = 1.6801
+				text = ""
+			intervals [14]:
+				xmin = 1.6801
+				xmax = 1.92
+				text = "▁FIGHT"
+			intervals [15]:
+				xmin = 1.92
+				xmax = 1.9201
+				text = ""
+			intervals [16]:
+				xmin = 1.9201
+				xmax = 2.28
+				text = "▁BROKE"
+			intervals [17]:
+				xmin = 2.28
+				xmax = 2.2801
+				text = ""
+			intervals [18]:
+				xmin = 2.2801
+				xmax = 2.52
+				text = "▁OUT"
+			intervals [19]:
+				xmin = 2.52
+				xmax = 2.5201000000000002
+				text = ""
+			intervals [20]:
+				xmin = 2.5201000000000002
+				xmax = 2.82
+				text = "▁THE"
+			intervals [21]:
+				xmin = 2.82
+				xmax = 2.8201
+				text = ""
+			intervals [22]:
+				xmin = 2.8201
+				xmax = 3.06
+				text = "▁WORSE"
+			intervals [23]:
+				xmin = 3.06
+				xmax = 3.0601000000000003
+				text = ""
+			intervals [24]:
+				xmin = 3.0601000000000003
+				xmax = 3.36
+				text = "▁SINCE"
+			intervals [25]:
+				xmin = 3.36
+				xmax = 3.3601
+				text = ""
+			intervals [26]:
+				xmin = 3.3601
+				xmax = 3.6
+				text = "▁TWENTY"
+			intervals [27]:
+				xmin = 3.6
+				xmax = 3.6001000000000003
+				text = ""
+			intervals [28]:
+				xmin = 3.6001000000000003
+				xmax = 3.96
+				text = "▁FOURTEEN"
+			intervals [29]:
+				xmin = 3.96
+				xmax = 3.9601
+				text = ""
+			intervals [30]:
+				xmin = 3.9601
+				xmax = 4.56
+				text = "▁IT"
+			intervals [31]:
+				xmin = 4.56
+				xmax = 4.560099999999999
+				text = ""
+			intervals [32]:
+				xmin = 4.560099999999999
+				xmax = 5.04
+				text = "▁LASTED"
+			intervals [33]:
+				xmin = 5.04
+				xmax = 5.0401
+				text = ""
+			intervals [34]:
+				xmin = 5.0401
+				xmax = 5.46
+				text = "▁ELEVEN"
+			intervals [35]:
+				xmin = 5.46
+				xmax = 5.4601
+				text = ""
+			intervals [36]:
+				xmin = 5.4601
+				xmax = 5.88
+				text = "▁DAYS"
+			intervals [37]:
+				xmin = 5.88
+				xmax = 5.8801
+				text = ""
+			intervals [38]:
+				xmin = 5.8801
+				xmax = 6.72
+				text = "▁IT"
+			intervals [39]:
+				xmin = 6.72
+				xmax = 6.7200999999999995
+				text = ""
+			intervals [40]:
+				xmin = 6.7200999999999995
+				xmax = 6.9
+				text = "▁KILLED"
+			intervals [41]:
+				xmin = 6.9
+				xmax = 6.9001
+				text = ""
+			intervals [42]:
+				xmin = 6.9001
+				xmax = 7.2
+				text = "▁AT"
+			intervals [43]:
+				xmin = 7.2
+				xmax = 7.2001
+				text = ""
+			intervals [44]:
+				xmin = 7.2001
+				xmax = 7.32
+				text = "▁LEAST"
+			intervals [45]:
+				xmin = 7.32
+				xmax = 7.3201
+				text = ""
+			intervals [46]:
+				xmin = 7.3201
+				xmax = 7.56
+				text = "▁TWO"
+			intervals [47]:
+				xmin = 7.56
+				xmax = 7.560099999999999
+				text = ""
+			intervals [48]:
+				xmin = 7.560099999999999
+				xmax = 7.8
+				text = "▁FIFTY"
+			intervals [49]:
+				xmin = 7.8
+				xmax = 7.8001
+				text = ""
+			intervals [50]:
+				xmin = 7.8001
+				xmax = 8.16
+				text = "▁FIVE"
+			intervals [51]:
+				xmin = 8.16
+				xmax = 8.1601
+				text = ""
+			intervals [52]:
+				xmin = 8.1601
+				xmax = 8.52
+				text = "▁PEOPLE"
+			intervals [53]:
+				xmin = 8.52
+				xmax = 8.5201
+				text = ""
+			intervals [54]:
+				xmin = 8.5201
+				xmax = 8.94
+				text = "▁TWO"
+			intervals [55]:
+				xmin = 8.94
+				xmax = 8.9401
+				text = ""
+			intervals [56]:
+				xmin = 8.9401
+				xmax = 9.12
+				text = "▁HUNDRED"
+			intervals [57]:
+				xmin = 9.12
+				xmax = 9.120099999999999
+				text = ""
+			intervals [58]:
+				xmin = 9.120099999999999
+				xmax = 9.36
+				text = "▁AND"
+			intervals [59]:
+				xmin = 9.36
+				xmax = 9.3601
+				text = ""
+			intervals [60]:
+				xmin = 9.3601
+				xmax = 9.54
+				text = "▁FIFTY"
+			intervals [61]:
+				xmin = 9.54
+				xmax = 9.540099999999999
+				text = ""
+			intervals [62]:
+				xmin = 9.540099999999999
+				xmax = 9.9
+				text = "▁FIVE"
+			intervals [63]:
+				xmin = 9.9
+				xmax = 9.9001
+				text = ""
+			intervals [64]:
+				xmin = 9.9001
+				xmax = 10.14
+				text = "▁IT"
+			intervals [65]:
+				xmin = 10.14
+				xmax = 10.1401
+				text = ""
+			intervals [66]:
+				xmin = 10.1401
+				xmax = 10.32
+				text = "▁KEPT"
+			intervals [67]:
+				xmin = 10.32
+				xmax = 10.3201
+				text = ""
+			intervals [68]:
+				xmin = 10.3201
+				xmax = 10.56
+				text = "▁THE"
+			intervals [69]:
+				xmin = 10.56
+				xmax = 10.5601
+				text = ""
+			intervals [70]:
+				xmin = 10.5601
+				xmax = 10.74
+				text = "▁WORLD"
+			intervals [71]:
+				xmin = 10.74
+				xmax = 10.7401
+				text = ""
+			intervals [72]:
+				xmin = 10.7401
+				xmax = 10.98
+				text = "▁ON"
+			intervals [73]:
+				xmin = 10.98
+				xmax = 10.9801
+				text = ""
+			intervals [74]:
+				xmin = 10.9801
+				xmax = 11.28
+				text = "▁ITS"
+			intervals [75]:
+				xmin = 11.28
+				xmax = 11.2801
+				text = ""
+			intervals [76]:
+				xmin = 11.2801
+				xmax = 11.58
+				text = "▁TOES"
+			intervals [77]:
+				xmin = 11.58
+				xmax = 11.64
+				text = ""

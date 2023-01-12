@@ -1,0 +1,95 @@
+I1116 19:11:38.229684 3237366 params.h:182] Reading torch model model/release_malay-eng-model_500imda_200King_31mix_splice100/final.zip
+I1116 19:11:38.232270 3237366 torch_asr_model.cc:36] Num intra-op threads: 1
+I1116 19:11:38.232297 3237366 torch_asr_model.cc:37] Num inter-op threads: 1
+I1116 19:11:46.338259 3237366 torch_asr_model.cc:80] Torch Model Info:
+I1116 19:11:46.338305 3237366 torch_asr_model.cc:81] 	subsampling_rate 6
+I1116 19:11:46.338310 3237366 torch_asr_model.cc:82] 	right context 10
+I1116 19:11:46.338311 3237366 torch_asr_model.cc:83] 	sos 8004
+I1116 19:11:46.338315 3237366 torch_asr_model.cc:84] 	eos 8004
+I1116 19:11:46.338317 3237366 torch_asr_model.cc:85] 	is bidirectional decoder 1
+I1116 19:11:46.338328 3237366 params.h:193] Reading unit table model/release_malay-eng-model_500imda_200King_31mix_splice100/words.txt2
+I1116 19:11:46.348731 3237366 params.h:222] Reading context ./hot_word_dir/
+I1116 19:11:46.358402 3237366 context_graph.cc:69] Contexts count size: 1217
+I1116 19:11:49.298624 3237366 context_graph.cc:69] Contexts count size: 1181
+I1116 19:11:52.094092 3237366 context_graph.cc:69] Contexts count size: 1166
+I1116 19:11:54.834401 3237366 context_graph.cc:69] Contexts count size: 1181
+I1116 19:11:57.630580 3237366 context_graph.cc:69] Contexts count size: 1181
+I1116 19:12:00.421562 3237366 websocket_server_main.cc:31] Listening at port 20089
+I1116 19:12:00.448848 3237366 websocket_server.cc:443] bpe_pathsys.path.append('/datadrive/temp/temp/wenet1/runtime/libtorch/bpe_model')
+I1116 19:12:08.245541 3237366 websocket_server.cc:512] context list is not changed
+I1116 19:12:08.245584 3237366 websocket_server.cc:512] context list is not changed
+I1116 19:12:08.245592 3237366 websocket_server.cc:512] context list is not changed
+I1116 19:12:08.245599 3237366 websocket_server.cc:512] context list is not changed
+I1116 19:12:08.245605 3237366 websocket_server.cc:512] context list is not changed
+I1116 19:12:08.246354 3237601 websocket_server.cc:360] {"signal":"start","nbest":1,"continuous_decoding":true,"hot_list":0,"sample_rate":16000}
+I1116 19:12:08.246430 3237601 websocket_server.cc:101] Received speech start signal, start reading speech
+I1116 19:12:08.247239 3237601 websocket_server.cc:110] 不使用热词解码 
+I1116 19:12:08.287628 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:08.788015 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:09.288383 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:09.788908 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:10.289638 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:10.790481 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:11.290967 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:11.791482 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:12.291965 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:12.792376 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:13.293411 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:13.793761 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:14.294150 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:14.794610 3237601 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:15.294996 3237601 websocket_server.cc:165] Received 2240 samples
+I1116 19:12:15.795346 3237601 websocket_server.cc:360] {"signal":"end"}
+I1116 19:12:15.795418 3237601 websocket_server.cc:130] Received speech end signal
+I1116 19:12:15.795436 3237601 websocket_server.cc:377] Read all pcm data, wait for decoding thread
+I1116 19:12:15.795653 3237603 asr_decoder.cc:104] Required 2147483647 get 362
+I1116 19:12:16.457540 3237603 asr_decoder.cc:212] Partial CTC result barang bandar charge orang daging
+I1116 19:12:16.460096 3237603 asr_decoder.cc:212] Partial CTC result barang bandar charge orang daging
+I1116 19:12:16.688624 3237603 asr_decoder.cc:84] Rescoring cost latency: 230ms.
+I1116 19:12:16.688756 3237603 websocket_server.cc:146] Final result: [{"sentence":"barang bandar charge orang orang daging","word_pieces":[{"word":"▁BARANG_malay","start":440,"end":540},{"word":"▁BANDAR_malay","start":1280,"end":1380},{"word":"▁CHARGE_malay","start":1880,"end":1980},{"word":"▁ORANG_malay","start":2180,"end":2280},{"word":"▁ORANG_malay","start":2600,"end":2700},{"word":"▁DAGING_malay","start":3260,"end":3360}]}]
+I1116 19:12:31.360700 3237366 websocket_server.cc:512] context list is not changed
+I1116 19:12:31.360742 3237366 websocket_server.cc:512] context list is not changed
+I1116 19:12:31.360749 3237366 websocket_server.cc:512] context list is not changed
+I1116 19:12:31.360755 3237366 websocket_server.cc:512] context list is not changed
+I1116 19:12:31.360761 3237366 websocket_server.cc:512] context list is not changed
+I1116 19:12:31.361325 3237791 websocket_server.cc:360] {"signal":"start","nbest":1,"continuous_decoding":true,"hot_list":0,"sample_rate":8000}
+I1116 19:12:31.361389 3237791 websocket_server.cc:101] Received speech start signal, start reading speech
+I1116 19:12:31.362231 3237791 websocket_server.cc:110] 不使用热词解码 
+I1116 19:12:31.363648 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:31.363765 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:31.864184 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:31.864251 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:32.364670 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:32.364733 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:32.865142 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:32.865201 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:33.365694 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:33.365756 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:33.866272 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:33.866338 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:34.366688 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:34.366752 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:34.867163 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:34.867223 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:35.367702 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:35.367763 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:35.868181 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:35.868242 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:36.368957 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:36.369020 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:36.869822 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:36.869910 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:37.370309 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:37.370455 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:37.870847 3237791 websocket_server.cc:165] Received 4000 samples
+I1116 19:12:37.870908 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:38.371572 3237791 websocket_server.cc:165] Received 2240 samples
+I1116 19:12:38.371634 3237791 websocket_server.cc:205] 进行重采样
+I1116 19:12:38.871955 3237791 websocket_server.cc:360] {"signal":"end"}
+I1116 19:12:38.872031 3237791 websocket_server.cc:130] Received speech end signal
+I1116 19:12:38.872062 3237791 websocket_server.cc:377] Read all pcm data, wait for decoding thread
+I1116 19:12:38.872686 3237793 asr_decoder.cc:104] Required 2147483647 get 726
+I1116 19:12:42.148012 3237793 asr_decoder.cc:212] Partial CTC result zion bishan bible perrian church brunei geylang and lake of green
+I1116 19:12:42.150555 3237793 asr_decoder.cc:212] Partial CTC result zion bishan bible perrian church brunei geylang and lake of green
+I1116 19:12:43.204802 3237793 asr_decoder.cc:84] Rescoring cost latency: 1056ms.
+I1116 19:12:43.205003 3237793 websocket_server.cc:146] Final result: [{"sentence":"zion bishan biblerian church brunei geylang and lake of green","word_pieces":[{"word":"▁Z","start":800,"end":900},{"word":"ION","start":1100,"end":1200},{"word":"▁BI","start":1340,"end":1440},{"word":"S","start":1460,"end":1560},{"word":"HAN","start":1640,"end":1740},{"word":"▁BIBLE","start":2480,"end":2580},{"word":"RIAN","start":3440,"end":3540},{"word":"▁CHURCH","start":3800,"end":3900},{"word":"▁BRU","start":4520,"end":4620},{"word":"NE","start":4760,"end":4860},{"word":"I","start":4880,"end":4980},{"word":"▁GE","start":5060,"end":5160},{"word":"Y","start":5180,"end":5280},{"word":"LA","start":5280,"end":5340},{"word":"NG","start":5360,"end":5460},{"word":"▁AND","start":5660,"end":5760},{"word":"▁LAKE","start":6020,"end":6120},{"word":"▁OF","start":6260,"end":6360},{"word":"▁GREEN","start":6500,"end":6600}]}]

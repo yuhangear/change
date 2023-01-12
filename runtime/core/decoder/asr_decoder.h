@@ -91,9 +91,20 @@ enum DecodeState {
 struct DecodeResource {
   std::shared_ptr<AsrModel> model = nullptr;
   std::shared_ptr<fst::SymbolTable> symbol_table = nullptr;
+  // std::shared_ptr<fst::SymbolTable> symbol_table0 = nullptr;
+  // std::shared_ptr<fst::SymbolTable> symbol_table1 = nullptr;
+  // std::shared_ptr<fst::SymbolTable> symbol_table2 = nullptr;
+  // std::shared_ptr<fst::SymbolTable[3]> symbol_table_list = nullptr;
+
   std::shared_ptr<fst::Fst<fst::StdArc>> fst = nullptr;
+  std::string context_path = "";
+  std::string bpe_path = "";
   std::shared_ptr<fst::SymbolTable> unit_table = nullptr;
   std::shared_ptr<ContextGraph> context_graph = nullptr;
+ 
+
+  std::shared_ptr<ContextGraph> context_graph_list[100] ;//= nullptr;
+  // ContextGraph *arr[3];
   std::shared_ptr<PostProcessor> post_processor = nullptr;
 };
 

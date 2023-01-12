@@ -21,6 +21,12 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <iostream>
+#include <unistd.h>
+#include <dirent.h>
+#include <cstddef>
 
 #include "decoder/asr_decoder.h"
 #ifdef USE_ONNX
@@ -74,6 +80,9 @@ DEFINE_int32(nbest, 10, "nbest for ctc wfst or prefix search");
 // SymbolTable flags
 DEFINE_string(dict_path, "",
               "dict symbol table path, required when LM is enabled");
+DEFINE_string(bpe_path, "",
+              "dict symbol table path, required when LM is enabled");
+
 DEFINE_string(unit_path, "",
               "e2e model unit symbol table, it is used in both "
               "with/without LM scenarios for context/timestamp");
@@ -82,6 +91,8 @@ DEFINE_string(unit_path, "",
 DEFINE_string(context_path, "", "context path, is used to build context graph");
 DEFINE_double(context_score, 3.0, "is used to rescore the decoded result");
 
+// sos/eos location
+DEFINE_int32(eos_symbol_id, -1, "symbol id of eos/sos symbol in unit_path file");
 // PostProcessOptions flags
 DEFINE_int32(language_type, 0,
              "remove spaces according to language type"
@@ -90,6 +101,41 @@ DEFINE_int32(language_type, 0,
 DEFINE_bool(lowercase, true, "lowercase final result if needed");
 
 namespace wenet {
+
+
+extern void getFiles(std::string path, std::vector<std::string> &files)
+{
+  DIR *dir;
+  struct dirent *ptr;
+
+  if ((dir = opendir(path.c_str())) == NULL)
+  {
+    perror("Open dir error...");
+    exit(1);
+  }
+
+  /*
+   * 文件(8)、目录(4)、链接文件(10)
+   */
+
+  while ((ptr = readdir(dir)) != NULL)
+  {
+    if (strcmp(ptr->d_name, ".") == 0 || strcmp(ptr->d_name, "..") == 0)
+      continue;
+    else if (ptr->d_type == 8)
+      files.push_back(path + ptr->d_name);
+    else if (ptr->d_type == 10)
+      continue;
+    else if (ptr->d_type == 4)
+    {
+      //files.push_back(ptr->d_name);
+      getFiles(path + ptr->d_name + "/", files);
+    }
+  }
+  closedir(dir);
+}
+
+
 std::shared_ptr<FeaturePipelineConfig> InitFeaturePipelineConfigFromFlags() {
   auto feature_config = std::make_shared<FeaturePipelineConfig>(
       FLAGS_num_bins, FLAGS_sample_rate);
@@ -125,7 +171,8 @@ std::shared_ptr<DecodeResource> InitDecodeResourceFromFlags() {
     LOG(INFO) << "Reading onnx model ";
     OnnxAsrModel::InitEngineThreads(FLAGS_num_threads);
     auto model = std::make_shared<OnnxAsrModel>();
-    model->Read(FLAGS_onnx_dir);
+    // model->Read(FLAGS_onnx_dir);
+    model->Read(FLAGS_onnx_dir, FLAGS_eos_symbol_id);
     resource->model = model;
 #else
     LOG(FATAL) << "Please rebuild with cmake options '-DONNX=ON'.";
@@ -133,9 +180,13 @@ std::shared_ptr<DecodeResource> InitDecodeResourceFromFlags() {
   } else {
 #ifdef USE_TORCH
     LOG(INFO) << "Reading torch model " << FLAGS_model_path;
+    if (FLAGS_rescoring_weight == 0){
+      LOG(INFO) << "rescoring_weight = 0, then no attention rescoring applied ";
+    }
     TorchAsrModel::InitEngineThreads(FLAGS_num_threads);
     auto model = std::make_shared<TorchAsrModel>();
-    model->Read(FLAGS_model_path);
+    model->Read(FLAGS_model_path, FLAGS_eos_symbol_id);
+    // model->Read(FLAGS_model_path);
     resource->model = model;
 #else
     LOG(FATAL) << "Please rebuild with cmake options '-DTORCH=ON'.";
@@ -147,6 +198,7 @@ std::shared_ptr<DecodeResource> InitDecodeResourceFromFlags() {
       fst::SymbolTable::ReadText(FLAGS_unit_path));
   CHECK(unit_table != nullptr);
   resource->unit_table = unit_table;
+  resource->bpe_path = FLAGS_bpe_path;
 
   if (!FLAGS_fst_path.empty()) {  // With LM
     CHECK(!FLAGS_dict_path.empty());
@@ -159,27 +211,70 @@ std::shared_ptr<DecodeResource> InitDecodeResourceFromFlags() {
     LOG(INFO) << "Reading symbol table " << FLAGS_dict_path;
     auto symbol_table = std::shared_ptr<fst::SymbolTable>(
         fst::SymbolTable::ReadText(FLAGS_dict_path));
+
+
     CHECK(symbol_table != nullptr);
     resource->symbol_table = symbol_table;
+
+
   } else {  // Without LM, symbol_table is the same as unit_table
     resource->symbol_table = unit_table;
   }
 
   if (!FLAGS_context_path.empty()) {
     LOG(INFO) << "Reading context " << FLAGS_context_path;
-    std::vector<std::string> contexts;
-    std::ifstream infile(FLAGS_context_path);
-    std::string context;
-    while (getline(infile, context)) {
-      contexts.emplace_back(Trim(context));
-    }
+    resource->context_path=FLAGS_context_path;
+
+    std::vector<std::string> hot_word_list;
+    getFiles(FLAGS_context_path, hot_word_list);
+    
     ContextConfig config;
     config.context_score = FLAGS_context_score;
     resource->context_graph = std::make_shared<ContextGraph>(config);
-    resource->context_graph->BuildContextGraph(contexts,
-                                               resource->symbol_table);
+
+    for (int i=0;i<=99;i++){
+      resource->context_graph_list[i]=std::make_shared<ContextGraph>(config);
+
+
+    }
+
+    int i=0;
+    for(auto &s : hot_word_list)
+    {
+      // resource->symbol_table_list
+      // resource->context_path=FLAGS_context_path;
+      std::vector<std::string> contexts;
+      std::ifstream infile(s);
+      std::string context;
+      while (getline(infile, context)) {
+        contexts.emplace_back(Trim(context));
+      }
+      int i_1;
+      i_1=s[s.size() - 2] - '0'  ;
+      i=s[s.size() - 1] - '0' -1 ;
+      if (i_1<=9 && i_1>=0){
+        i=i_1*10+i;
+      }
+      else{
+        i=s[s.size() - 1] - '0' -1 ;
+      }
+      
+      resource->symbol_table=std::shared_ptr<fst::SymbolTable>(  fst::SymbolTable::ReadText(FLAGS_unit_path));
+      // resource->context_graph_list[i]=std::make_shared<ContextGraph>(config);
+
+      
+      
+      resource->context_graph_list[i]->BuildContextGraph(contexts,    resource->symbol_table   );
+      resource->context_graph_list[i]->if_init==1 ;
+
+    
+
+    }
+
+
   }
 
+  resource->context_graph=resource->context_graph_list[0];
   PostProcessOptions post_process_opts;
   post_process_opts.language_type =
       FLAGS_language_type == 0 ? kMandarinEnglish : kIndoEuropean;
